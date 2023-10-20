@@ -1,6 +1,7 @@
 
 # Descripcion
 Nuestra página web se trata de un e-commerce diseñado para la empresa DH Tech, especializada en la venta de componentes de PC de alta calidad, con sitio en la provincia de Catamarca y que también realiza envíos dentro de Argentina. 
+
 ![logo-dh](https://github.com/Emanuel-Ramayo/grupo_5_ecommerce/assets/146298020/3135ed82-8240-4ce4-839b-6dd6dfeef4e0)
 
 
