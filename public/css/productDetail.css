@@ -1,0 +1,306 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Lato', sans-serif;   
+}
+
+header {
+    background-color: #eae7de;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 0;
+}
+
+#logo {
+    height: 75px; 
+    margin-left: 5%; 
+}
+
+h1 {        
+    font-size: 40px;
+    margin: auto 0;
+}
+
+.iconos-header {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;    
+    gap: 25px;
+    margin-left: 10%;
+}
+
+#carrito {
+    display: none;
+}
+
+.pc-escritorio {
+    display: none;
+    background-color: #3483FA;    
+    width: 15vw;
+    height: 10vh;
+    border: 1px solid #3483FA;
+    border-radius: 20px;    
+    justify-content: center;        
+}
+
+
+
+#monitor-imagen-1{
+    display: flex;
+    width: 80%;   
+    margin: auto;
+}
+
+.selector-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    height: 25px;   
+}
+    
+#circulos-fotos {
+    font-size: 15px;    
+}
+
+.seccion-producto {    
+    background-color: #eae7de;
+    width: 95%;
+    height: 250px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+
+#nombre-producto {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.seccion-pagos {    
+    background-color: #eae7de;
+    width: 55%;
+    height: 230px;    
+}
+
+#seleccion-titulo {
+    font-size: 16px;
+    height: 35px;
+}
+
+.metodos-pago {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 14px;
+    font-style: italic;   
+    margin: auto;
+    
+}
+
+.pago1 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.pago1 h3{
+width: 85%;
+}
+
+.pago2 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 35px;   
+}
+
+.pago2 h3{
+    width: 85%;
+    }
+
+.pago3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 35px;    
+}
+
+.pago3 h3{
+    width: 85%;
+    }
+
+#circulos-pago {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.seccion-compra {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #eae7de;
+    width: 45%;
+    height: 230px;
+}
+
+.precios {  
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.precios h4 {
+    font-size: 15px;
+    font-style: italic;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+
+#descuento {
+    font-size: 25px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: end;
+}
+
+#precio-original {
+    display: flex;
+    justify-content: center;
+    text-decoration: line-through;
+    font-size: medium;    
+}
+
+.contenedor-comprar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.comprar {
+    display: flex;
+    background-color: #3483FA;    
+    width: 125px;
+    height: 40px;
+    border: 5px solid #3483FA;
+    border-radius: 20px;    
+    justify-content: center;        
+}
+
+.comprar a {
+    text-decoration: none;
+    font-size: 20px;   
+    color: white;
+}
+
+#camion {    
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#envio-gratis {         
+    font-size: 14px;
+    font-style: italic;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #eae7de;
+    width: 95%;
+    height: 745px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.seccion-acerca-producto
+{            
+    margin-top: 25px;
+    padding: 15px;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+
+.seccion-acerca-producto h3 {
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    
+}
+
+.seccion-acerca-producto p {
+    font-size: 15px;
+    font-style: italic;
+    width: 100%;
+    height: 135px;
+}
+
+.seccion-acerca-producto ul {
+    font-size: 14px;
+    width: 95%;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.lista {    
+    width: 100%;
+    padding-left: 18px;
+}
+
+@media (min-width: 768px) {
+
+    header {
+        height: 20vh;
+    }
+
+    .iconos-header {        
+       
+    }
+
+    #carrito {
+        display: block;
+        
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .pc-escritorio {
+        display: flex;
+    }
+}
