@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Fuentes de Letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/register.css">
+
+</head>
+<body>
+    <header>
+        <h2>Registro de Usuario</h2>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <section class="form-text">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Ingrese su Nombre" required>
+            </section>
+            <section class="form-text">
+                <label for="apellido">Apellido</label>
+                <input id="apellido" name="apellido" type="text" placeholder="Ingrese su Apellido" required>
+            </section>
+            <section class="form-text">
+                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                <input id="fechaNacimiento" name="fechaNacimiento" type="date" required>
+            </section>
+            <section class="form-text">
+                <label for="numeroTelefono">Numero de Telefono</label>
+                <input id="numeroTelefono" name="numeroTelefono" type="tel" placeholder="ej: 383-154896625" required>
+            </section>
+            <section class="form-text">
+                <label for="correo">Correo Electronico</label>
+                <input id="correo" name="correo" type="email" placeholder="correo@correo.com" required>
+            </section>  
+            <section class="form-text">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+            </section>
+            <section class="form-text">
+                <label for="repContraseña">Repetir Contraseña</label>
+                <input type="password" id="repContraseña" name="repContraseña" required>
+            </section>
+            <section class="form-check">
+                <input type="checkbox" id="terminosCondiciones" name="terminosCondiciones" required>
+                <label for="terminosCondiciones">Acepto los Terminos y Condiciones</label>
+            </section>
+            <button type="submit" class="botonReg-log">Registrarse</button>
+        </form>
+        <label> Ya tienes una Cuenta?</label>
+        <button onclick="window.location.href='login'" class="botonReg-log">Ir a Inicio de Sesion</button>
+    </main>
+    </body>
+    </html>
