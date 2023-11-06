@@ -6,57 +6,108 @@
 
 body {
     background-color: white;
-    font-family: 'Lato', sans-serif;   
+    font-family: 'Lato', sans-serif;     
 }
 
 header {
     background-color: #eae7de;
     width: 100%;
-    height: 75px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+}
+
+.logo-titulo {
+    background-color: #eae7de;
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
-    padding: 15px;
-    margin: 0;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 #logo {
-    height: 75px; 
-    margin-left: 5%; 
+    height: 100%;
 }
 
-h1 {        
-    font-size: 40px;
-    margin: auto 0;
-}
 
 .iconos-header {
-    font-size: 25px;
+    background-color: #eae7de;
+    width: 50%;
+    height: 100%;
     display: flex;
+    align-items: center;  
+    justify-content: flex-end;
+}
+
+.iconos-header i {
+    font-size: 30px;
+    background-color: #eae7de;
+    margin-right: 2vw;
+    cursor: pointer;
+    color: #3483FA;
+    transition: all 1000ms;
+}
+
+.iconos-header i:hover {
+    font-size: 40px;
+    color: rgb(55, 206, 206);    
+}
+
+.barra {
+    background-color: #eae7de;
+    width: 100%;
+    height: 30%;
+    display: none;
     flex-direction: row;
-    justify-content: flex-end;    
-    gap: 25px;
-    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    border-bottom: 2px solid rgb(204, 203, 203);
+}
+
+.escritorio {
+    display: flex;
+    background-color: #3483FA;    
+    width: 120px;
+    height: 35px;
+    border: 5px solid #3483FA;
+    border-radius: 20px;    
+    justify-content: center;
+    align-items: center; 
+    margin-right: 1vw;     
+    transition: all 1000ms;  
+}
+
+.escritorio:hover {
+    background-color: rgb(55, 206, 206);
+    border: 5px solid white;
+}
+
+.escritorio a {
+    text-decoration: none;
+    font-size: 12px;   
+    color: white;
 }
 
 #carrito {
     display: none;
 }
 
-.pc-escritorio {
-    display: none;
-    background-color: #3483FA;    
-    width: 15vw;
-    height: 10vh;
-    border: 1px solid #3483FA;
-    border-radius: 20px;    
-    justify-content: center;        
-}
 
+h1 {        
+    font-size: 40px;
+}
 
 
 #monitor-imagen-1{
     display: flex;
-    width: 80%;   
+    width: 80%;    
     margin: auto;
 }
 
@@ -68,7 +119,15 @@ h1 {
 }
     
 #circulos-fotos {
-    font-size: 15px;    
+    font-size: 15px;
+    cursor: pointer;
+    color: #3483FA;
+    transition: all 500ms;   
+}
+
+#circulos-fotos:hover {
+    font-size: 20px;
+    color: rgb(55, 206, 206); 
 }
 
 .seccion-producto {    
@@ -98,8 +157,10 @@ h1 {
 }
 
 #seleccion-titulo {
-    font-size: 16px;
+    font-size: 18px;
     height: 35px;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .metodos-pago {
@@ -153,9 +214,17 @@ width: 85%;
     }
 
 #circulos-pago {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
+        margin-top: 5px;
+        display: flex;
+        align-content: flex-start;
+        cursor: pointer;
+        transition: all 500ms;
+        color: #3483FA;
+}
+
+#circulos-pago:hover {
+    font-size: 20px;
+    color: rgb(55, 206, 206); 
 }
 
 .seccion-compra {
@@ -183,6 +252,12 @@ width: 85%;
     justify-content: center;
     align-items: flex-end;
     margin-top: 15px;
+    animation: letras 8s infinite;
+}
+
+@keyframes letras {
+    0% { color: black; }
+    100% { color: rgb(55, 206, 206); }
 }
 
 #descuento {
@@ -192,6 +267,7 @@ width: 85%;
     justify-content: center;
     width: 100%;
     align-items: end;
+    color: #3483FA;
 }
 
 #precio-original {
@@ -215,7 +291,13 @@ width: 85%;
     height: 40px;
     border: 5px solid #3483FA;
     border-radius: 20px;    
-    justify-content: center;        
+    justify-content: center;
+    transition: all 1000ms;       
+}
+
+.comprar:hover {
+    background-color: rgb(55, 206, 206);
+    border: 5px solid white;
 }
 
 .comprar a {
@@ -227,6 +309,14 @@ width: 85%;
 #camion {    
     margin: auto;
     margin-bottom: 15px;
+    color: #3483FA;
+    position: relative;
+    animation: camion 10s infinite;
+}
+
+@keyframes camion {
+    0% { right: 30px; color: rgb(55, 206, 206); }
+    100% { right: 0px; color: #3483FA; }
 }
 
 #envio-gratis {         
@@ -281,26 +371,121 @@ footer {
     padding-left: 18px;
 }
 
+.wsp-ico {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#wsp {
+    
+    background-color: rgb(112, 241, 112);
+    color: white;
+    font-size: 12vw;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 450ms; 
+}
+
+#wsp:hover {
+    font-size: 13vw;
+    width: 13vw;
+    height: 13vw;
+}
+
 @media (min-width: 768px) {
 
     header {
-        height: 20vh;
+        height: 10vh;
+        align-items: flex-start;
+    }
+
+    .logo-titulo {
+        height: 70%;
+        width: 55%;
+        display: flex;
+        justify-content: flex-end;    
     }
 
     .iconos-header {        
-       
+       height: 70%;
+       width: 45%;
     }
 
-    #carrito {
-        display: block;
-        
+    .iconos-header i {
+        font-size: 25px;
     }
+
+    .barra {
+       display: flex;
+    }   
 
     #menu {
         display: none;
     }
 
-    .pc-escritorio {
-        display: flex;
+    #carrito {
+        display: block;        
     }
+
+    .contenedor-boton {
+        display: block;       
+    }
+
+    .escritorio {
+        margin-bottom: 5%;
+    }
+    
+
+    .pago1 {
+        width: 90%;
+        margin-left: 30%;
+    }
+
+    .pago2 {
+        width: 90%;
+        margin-left: 30%;
+    }
+
+    .pago3 {
+        width: 90%;
+        margin-left: 30%;
+    }
+
+    #seleccion-titulo {
+        margin-left: 20%;
+    }
+
+    .seccion-compra {
+        padding-right: 15%;
+    }
+   
+    #wsp {
+        font-size: 4vw;
+        width: 4vw;
+        height: 4vw;
+    }
+
+    #wsp:hover {
+        font-size: 6vw;
+        width: 6vw;
+        height: 6vw;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    footer {
+        max-width: 950px;
+        margin: auto;
+    }
+    
+
 }
