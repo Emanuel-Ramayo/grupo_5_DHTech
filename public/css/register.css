@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 /* Estilos generales */
 body {
     font-family: 'Lato', sans-serif;
@@ -51,7 +54,7 @@ label {
     justify-content: space-around
 }
 
-/* Estilo para Botones Registro y Login */
+/* Estilo para Botones Registro, Login y iconos */
 
 .botonReg-log{
     background-color: #363755;
@@ -67,4 +70,35 @@ label {
     background-color: #4947e2;
     color: black;
     font-family: 'Lato', sans-serif;
+}
+
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-auto{
+    text-align: center;
+    align-items: center;
+}
+
+.icono{
+    color: #5a03d5;
+    font-size: 16px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.icono:hover{
+    cursor: pointer;
+    color: #f0f0f0;
+    background-color: #5a03d5;
+}
+
+/* Estilo para el Logo */
+
+.logo{
+    border: solid 3px red;
+    width: 100vh;
 }
