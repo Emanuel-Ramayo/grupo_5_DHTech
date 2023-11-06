@@ -170,8 +170,14 @@ main {
     margin-bottom: 20px;
     background-color: #5d67ce;
     border-radius: 10px;
+    text-align: center;
 }
-
+.finalPrice h4 {
+    text-decoration: underline; 
+  }
+  .discount h3 {
+    text-decoration: underline
+  }
 #productPrice .enviar {
     background-color: #28a745;
     color: white;
