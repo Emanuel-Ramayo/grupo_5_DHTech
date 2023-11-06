@@ -1,0 +1,76 @@
+
+/* GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+}
+
+.container {
+    max-width: 100vw;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header-arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    background-color: aqua;
+}
+
+.logo-container {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.logo-container > img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-icons  {
+    display: none;
+}
+
+/* MENU */
+
+.menu-links {
+    list-style: none;
+}
+
+
+.menu-link > a{
+    text-decoration: none;
+}
+
+.menu-link {
+    height: 2rem;
+    padding: .5rem;
+}
+
+.menu-link:hover {
+    cursor: pointer;
+    background-color: azure;
+}
+
+.menu {
+    display: none;
+    width: 100%;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+/* clase que muestra el menu */
+
+.showMenu {
+    display: block;
+}
