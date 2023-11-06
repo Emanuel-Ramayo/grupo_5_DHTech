@@ -19,7 +19,7 @@ menuBtn.addEventListener('click', () => {
 function changeImageNovedades(index,cb) {
     cb(index)
 }
-
+/*
 btnLeft.addEventListener('click', () => {
     console.log(`Izquierda. Index es: ${index}`)
     changeImageNovedades(index,changeLeft)
@@ -43,3 +43,4 @@ function changeRigth(index) {
         index++
     }
 }
+*/
