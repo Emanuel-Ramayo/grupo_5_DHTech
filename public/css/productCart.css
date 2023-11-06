@@ -8,12 +8,12 @@
 body {
     font-family: 'Lato', sans-serif;
     padding: 5px;
-
+    background-color: white;
 }
 
 header,
 header {
-    background-color:#414892 ;
+    background-color:#eae7de;
     width: 100%;
     height: 10vh;
     display: flex;
@@ -25,7 +25,7 @@ header {
 }
 
 .logo-titulo {
-    background-color:#414892;
+    background-color:#eae7de;
     width: 50%;
     height: 100%;
     display: flex;
@@ -36,11 +36,18 @@ header {
 
 #logo {
     height: 100%;
+    position: relative;
+    left: 42vw;
+}
+
+#titulo {
+    position: relative;
+    left: 42vw;
 }
 
 
 .iconos-header {
-    background-color:#414892;
+    background-color: #eae7de;
     width: 50%;
     height: 100%;
     display: flex;
@@ -50,7 +57,7 @@ header {
 
 .iconos-header i {
     font-size: 30px;
-    background-color:#414892;
+    background-color: #eae7de;
     margin-right: 2vw;
     cursor: pointer;
     color: #3483FA;
@@ -62,11 +69,19 @@ header {
     color: rgb(55, 206, 206);    
 }
 
+#carrito {
+    display: flex;
+}
+
+#menu {
+    display: none;
+}
+
 .barra {
     background-color: #eae7de;
     width: 100%;
     height: 30%;
-    display: none;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -101,7 +116,7 @@ a{
     color: black;
 }
 footer {
-    background-color: #414892;
+    background-color: #eae7de;
     padding: 20px;
     text-align: center;
 }
@@ -110,14 +125,15 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #cfddf6;
+    background-color: white;
+    margin-top: 70px;
 
 }
 
 /* Estilos para la sección de productos */
 #productBox {
     width: 70%;
-    background-color: #cfddf6;
+    background-color: white;
 }
 
 #productBox article {
@@ -125,7 +141,7 @@ main {
     display: flex;
     border: 1px solid #dee2e6;
     margin-bottom: 20px;
-    background-color: #5d67ce;
+    background-color: #eae7de;
     border-radius: 10px;
 }
 
@@ -151,12 +167,27 @@ main {
 }
 
 #productBox .borrar {
-    background-color: #dc3545;
+    display: flex;
+    background-color: #3483FA;    
+    width: 120px;
+    height: 35px;
+    border: 5px solid #3483FA;
+    border-radius: 20px;    
+    justify-content: center;
+    align-items: center; 
+    margin-right: 1vw;     
+    transition: all 1000ms;
+    text-decoration: none;
+    font-size: 12px;   
     color: white;
-    border: none;
-    padding: 10px;
     cursor: pointer;
 }
+
+#productBox .borrar:hover {
+    background-color: rgb(55, 206, 206);
+    border: 5px solid white;
+}
+
 
 /* Estilos para la sección de precios */
 #productPrice {
@@ -168,9 +199,10 @@ main {
     border: 1px solid #dee2e6;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #5d67ce;
+    background-color: #eae7de;
     border-radius: 10px;
     text-align: center;
+    font-size: 20px;
 }
 .finalPrice h4 {
     text-decoration: underline; 
@@ -179,23 +211,99 @@ main {
     text-decoration: underline
   }
 #productPrice .enviar {
-    background-color: #28a745;
+    display: flex;
+    background-color: #3483FA;    
+    width: 120px;
+    height: 35px;
+    border: 5px solid #3483FA;
+    border-radius: 20px;    
+    justify-content: center;
+    align-items: center; 
+    margin-right: 1vw;     
+    transition: all 1000ms;
+    text-decoration: none;
+    font-size: 12px;   
     color: white;
-    border: none;
-    padding: 10px;
     cursor: pointer;
-    border-radius: 10px;
 }
+
+#productPrice .enviar:hover {
+    background-color: rgb(55, 206, 206);
+    border: 5px solid white;
+}
+
+.preciofinal {
+    color: #3483FA;
+}
+
+#wsp {
+    
+    background-color: rgb(112, 241, 112);
+    color: white;
+    font-size: 4vw;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    transition: all 450ms;
+    cursor: pointer;
+}
+
+#wsp:hover {
+    font-size: 6vw;
+    width: 6vw;
+    height: 6vw;
+}
+
 
 /* Media quieres */
 
 @media (max-width: 768px) {
     main {
         flex-direction: column;
+        margin-top: 5px;
+    }
+
+    #carrito {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #logo {
+        position: static;
+    }
+    
+    #titulo {
+        position: static;
     }
 
     #productBox,
     #productPrice {
         width: 100%;
     }
+
+    .barra {
+        display: none;
+    }
+
+    #wsp {
+        font-size: 12vw;
+        width: 12vw;
+        height: 12vw;
+    }
+
+    #wsp:hover {
+        font-size: 14vw;
+        width: 14vw;
+        height: 14vw;
+    }
+
 }

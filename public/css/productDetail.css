@@ -371,6 +371,16 @@ footer {
     padding-left: 18px;
 }
 
+.redes {
+    background-color: #eae7de;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    border-top: 2px solid rgb(204, 203, 203);
+    margin-top: 20px;
+}
+
+
 .wsp-ico {
     position: fixed;
     bottom: 20px;

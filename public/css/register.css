@@ -113,6 +113,15 @@ label {
     width: 70vh;
 }
 
+.redes {
+    background-color: #eae7de;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    border-top: 2px solid rgb(204, 203, 203);
+    margin-top: 20px;
+}
+
 #wsp {
     
     background-color: rgb(112, 241, 112);
@@ -128,6 +137,7 @@ label {
     bottom: 15px;
     right: 15px;
     transition: all 450ms;
+    cursor: pointer;
 }
 
 #wsp:hover {

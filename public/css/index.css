@@ -173,7 +173,7 @@ body {
     padding: .5rem .3rem;
     text-align: center;
     border-radius: .3rem;
-    background-color: #4d55b5;
+    background-color: #3483FA;
     color: white;
     border: 1px solid transparent;
     transition: background ease-in .2s ;
@@ -190,13 +190,13 @@ body {
 
 footer {
     margin-top: 2rem;
-    background-color: #4d55b5;
+    background-color: #eae7de;
 }
 
 .footer {
     
     height: 100px;
-    color: white;
+    color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
