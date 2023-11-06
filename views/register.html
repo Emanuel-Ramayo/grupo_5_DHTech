@@ -8,12 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <!-- Link de Css -->
     <link rel="stylesheet" href="../css/register.css">
+    <!-- Link de Iconos -->
+    <script src="https://kit.fontawesome.com/ced4b68b20.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
     <header>
         <h2>Registro de Usuario</h2>
+        <div>
+            <img src="./images/logo-original.jpg" alt="logo de la pagina" class="logo">
+        </div>
     </header>
     <main>
         <form action="#" method="get">
@@ -28,6 +34,21 @@
             <section class="form-text">
                 <label for="fechaNacimiento">Fecha de Nacimiento</label>
                 <input id="fechaNacimiento" name="fechaNacimiento" type="date" required>
+            </section>
+            <section class="form-text">
+                <label for="provincia">Provincia</label>
+                <select name="provincia" id="provincia">
+                    <option value="cat">Catamarca</option>
+                    <option value="lar">La Rioja</option>
+                    <option value="sal">Salta</option>
+                    <option value="cor">Corrientes</option>
+                    <option value="cba">Cordoba</option>
+                    <option value="bsas">Buenos Aires</option>
+                    <option value="lap">La Pampa</option>
+                    <option value="chu">Chubut</option>
+                    <option value="Juy">Jujuy</option>
+                    <option value="cho">Chaco</option>
+                </select>
             </section>
             <section class="form-text">
                 <label for="numeroTelefono">Numero de Telefono</label>
@@ -49,10 +70,26 @@
                 <input type="checkbox" id="terminosCondiciones" name="terminosCondiciones" required>
                 <label for="terminosCondiciones">Acepto los Terminos y Condiciones</label>
             </section>
-            <button type="submit" class="botonReg-log">Registrarse</button>
+            <div class="button">
+                <button type="submit" class="botonReg-log">Registrarse</button>
+            </div>
+            <label class="form-check">Registrarse con:</label>
+            <section class="login-auto">
+                <button type="button" onclick="registerWithGoogle()" class="icono"><i class="fa-brands fa-google"></i> Google</button>
+                <button type="button" onclick="registerWithFacebook()" class="icono"><i class="fa-brands fa-facebook"></i> Facebook</button>
+            </section>
+            <label class="form-check"> Ya tienes una Cuenta?</label>
+            <div class="button">
+                <button onclick="window.location.href='login'" class="botonReg-log">Iniciar Sesion</button>
+            </div>
         </form>
-        <label> Ya tienes una Cuenta?</label>
-        <button onclick="window.location.href='login'" class="botonReg-log">Ir a Inicio de Sesion</button>
     </main>
+
+    <div class="wsp-ico">
+        <section id="wsp">
+            <i class="fa-brands fa-whatsapp"></i>       
+        </section>
+    </div>
+    
     </body>
     </html>
