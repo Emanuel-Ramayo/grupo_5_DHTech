@@ -33,7 +33,7 @@ body {
 }
 
 .input-campo i {
-  color: #7a77f5; /* Verde para los iconos */
+  color: #3483FA; /* Verde para los iconos */
   margin-right: 10px;
 }
 
@@ -48,7 +48,7 @@ body {
 
 /* Estilo para el botón de enviar */
 .btn-enviar button {
-  background-color: #4947e2; /* Verde para el botón */
+  background-color: #3483FA; /* Verde para el botón */
   color: #fff; /* Texto blanco */
   border: none;
   border-radius: 5px; 
@@ -60,7 +60,7 @@ body {
 
 /* Estilo para los encabezados (H1 y H2) */
 h1{
- color:#ee0e60
+ color:black
 }
 
 h2{
@@ -78,7 +78,7 @@ label {
 /* Estilo para el enlace de texto de regreso */
 a {
   text-decoration: none; 
-  color: #9800b3; /* Color del texto del enlace */
+  color: #3483FA; /* Color del texto del enlace */
   font-weight: bold;
   font-size: large;
 }
