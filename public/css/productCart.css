@@ -126,6 +126,7 @@ main {
     border: 1px solid #dee2e6;
     margin-bottom: 20px;
     background-color: #5d67ce;
+    border-radius: 10px;
 }
 
 #productBox .imagen {
@@ -168,6 +169,7 @@ main {
     padding: 20px;
     margin-bottom: 20px;
     background-color: #5d67ce;
+    border-radius: 10px;
 }
 
 #productPrice .enviar {
@@ -176,6 +178,7 @@ main {
     border: none;
     padding: 10px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 /* Media quieres */
