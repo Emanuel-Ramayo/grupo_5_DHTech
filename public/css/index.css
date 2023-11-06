@@ -8,12 +8,17 @@
 
 body {
     width: 100vw;
+    font-family: 'Lato';
 }
 
 .container {
     max-width: 100vw;
     width: 90%;
     margin: 0 auto;
+}
+
+.titulos {
+    font-size: 1.5rem;
 }
 
 /* HEADER */
@@ -73,4 +78,32 @@ body {
 
 .showMenu {
     display: block;
+}
+
+/* NOVEDADES SECTION */
+
+.novedades {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.carrousel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-carrousel-container {
+    height: 100px;
+    object-fit: cover;
+}
+
+.img-carrousel-container > img {
+    height: 100%;
 }

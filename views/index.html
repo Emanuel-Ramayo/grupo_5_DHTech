@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-
+    <!--Fuente de Letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e5ae4ecceb.js" crossorigin="anonymous"></script>
 
     <title>DH Tech</title>
@@ -46,7 +49,23 @@
             </ul>
         </nav>
     </header>
-    <main class="container"></main>
+    <main class="container">
+        <section class="novedades">
+            <h2 class="titulos">Novedades</h2>
+            <div class="carrousel">
+                <div id="btnLeft" class="carrousel-btn">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="img-carrousel-container">
+                    <img id="imgContainer" src="./images/monitor.png" alt="">
+                </div>
+                <div id="btnRigth" class="carrousel-btn">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </section>
+
+    </main>
     <footer class="container"></footer>
     
     <script src="./js/index.js"></script>
