@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e5ae4ecceb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/css/productCart.css">
+    
+    <title>Carrito de compras - DH Tech</title>
+</head>
+
+<body>
+    <header>
+           
+        <section class="logo-titulo">
+
+            <img id="logo" src="../public/images/Logo5.jpg" alt="Logo de la Página">
+            
+            <a href="/index"><h1 id="titulo">DH Tech</h1></a>
+
+        </section>
+
+        <section class="iconos-header">
+            <div id="lupa">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            
+            <div id="user">
+                
+                <a href="/login"><i class="fa-solid fa-user"></i></a>
+            </div>
+            
+            <div id="carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <div id="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>            
+        </section>
+        
+
+        <nav class="barra">
+            
+            <div class="boton">
+                <div class="escritorio">
+                    <a href="#">Categorías</a>
+                </div>
+            </div>
+
+            <div class="boton">
+                <div class="escritorio">
+                    <a href="#">Armá tu PC</a>
+                </div>
+            </div>
+
+            <div class="boton">
+                <div class="escritorio">
+                    <a href="#">Notebooks</a>
+                </div>
+            </div>
+
+            <div class="boton">
+                <div class="escritorio">
+                    <a href="#">Monitores</a>
+                </div>
+            </div>
+
+            <div class="boton">
+                <div class="escritorio">
+                    <a href="#">Placas de Video</a>
+                </div>
+            </div>
+
+            <div class="boton">
+                <div class="escritorio">
+                    <a href="#">Microprocesadores</a>
+                </div>
+            </div>
+
+        </nav>            
+    </header>
+    <main>
+        <section id="productBox">
+            <article>
+                <div class="imagen"><img src="../public/images/cpuCarrito.jpg" alt="cpu"></div>
+                <div class="contenido">
+                    <ul>
+                        <li><h3>AMD Ryzen 5</h3></li>
+                        <li><p>Modelo: AMD Ryzen 5 5500</p></li>
+                        <li><p>Precio: $99999.99</p></li>
+                        <li>
+                            <p>
+                                <label for="cantidad">Cantidad:</label>
+                                <select name="cantidad" id="cantidad">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" >3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </p>
+                        </li>
+                        <li><button type="reset" value="Borrar" class="borrar">Eliminar🗑️</button></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <div class="imagen"><img src="../public/images/monitorCarrito.png" alt="monitor"></div>
+                <div class="contenido">
+                    <ul>
+                        <li><h3>Monitor 27 Gigabyte VA 165HZ</h3></li>
+                        <li><p>Modelo: Gigabyte G27FC-SA</p></li>
+                        <li><p>Precio: $99999.99</p></li>
+                        <li>
+                            <p>
+                                <label for="cantidad">Cantidad:</label>
+                                <select name="cantidad" id="cantidad">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" >3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </p>
+                        </li>
+                        <li><button type="reset" value="Borrar" class="borrar">Eliminar🗑️</button></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <div class="imagen"><img src="../public/images/motherCarrito.jpg" alt="mother"></div>
+                <div class="contenido">
+                    <ul>
+                        <li><h3>Motherboard Asus</h3></li>
+                        <li><p>Modelo: A320M K Prime AM4</p></li>
+                        <li><p>Precio: $99.99</p></li>
+                        <li>
+                            <p>
+                                <label for="cantidad">Cantidad:</label>
+                                <select name="cantidad" id="cantidad">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" >3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </p>
+                        </li>
+                        <li><button type="reset" value="Borrar" class="borrar">Eliminar🗑️</button></li>
+                    </ul>
+                </div>
+            </article>
+
+        </section>
+        <section id="productPrice">
+            <article>
+                <div class="discount">
+                    <h3>Tu compra</h3>
+                    <h5>¿Tenes algún cupón de descuento?</h5>
+                    <input type="text" placeholder="Ingresa tu cupón aquí...">
+                    <button type="submit" value="validarCupon" class="enviar">Validar cupón</button>
+                </div>
+                <div class="finalPrice">
+                    <h4>Total compra</h4>
+                    <h5>$999</h5>
+                    <button type="submit" value="Enviar" class="enviar">Enviar</button>
+                </div>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h5>Guía</h5>
+            <p>¿Quienes Somos?</p>
+            <p>Preguntas Frecuentes</p>
+        </section>
+        <section>
+            <h5>Productos</h5>
+        </section>
+        <section>
+            <h5>Medios de pago</h5>
+        </section>
+        <section>
+            <h5>Redes Sociales</h5>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-regular fa-envelope"></i>
+            <i class="fa-brands fa-twitter"></i>            
+        </section>
+    </footer>
+</body>
+
+</html>
