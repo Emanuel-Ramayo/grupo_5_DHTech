@@ -28,7 +28,6 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 3rem;
-    background-color: aqua;
 }
 
 .logo-container {
@@ -64,13 +63,11 @@ body {
 
 .menu-link:hover {
     cursor: pointer;
-    background-color: azure;
 }
 
 .menu {
     display: none;
     width: 100%;
-    background-color: aquamarine;
     text-align: center;
 }
 
