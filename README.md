@@ -62,3 +62,12 @@ Para el diseño y maquetado de nuestro e-commerce utilizamos distintas fuentes d
 
 - [Coolmod](https://www.coolmod.com/)
 - [Computer Sore](https://www.computerstore.es/)
+
+
+**_Tablero de trabajo:_**
+[Tablero](https://trello.com/b/VgXeO6Fb/proyecto-grupo-05)
+
+**_Retro:_**
+[Retro](https://trello.com/b/5MpA4mBg/retro)
+
+
