@@ -9,18 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e5ae4ecceb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/productCart.css">
-    
+
     <title>Carrito de compras - DH Tech</title>
 </head>
 
 <body>
+     <!--Header-->
     <header>
-           
+
         <section class="logo-titulo">
 
             <img id="logo" src="./images/Logo-original.jpg" alt="Logo de la Página">
-            
-            <a href="/index"><h1 id="titulo">DH Tech</h1></a>
+
+            <a href="/">
+                <h1 id="titulo">DH Tech</h1>
+            </a>
 
         </section>
 
@@ -28,24 +31,24 @@
             <div id="lupa">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            
+
             <div id="user">
-                
+
                 <a href="/login"><i class="fa-solid fa-user"></i></a>
             </div>
-            
+
             <div id="carrito">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="/"><i class="fa-solid fa-cart-shopping"></i></a>
             </div>
 
             <div id="menu">
                 <i class="fa-solid fa-bars"></i>
-            </div>            
+            </div>
         </section>
-        
+
 
         <nav class="barra">
-            
+
             <div class="boton">
                 <div class="escritorio">
                     <a href="#">Categorías</a>
@@ -82,7 +85,7 @@
                 </div>
             </div>
 
-        </nav>            
+        </nav>
     </header>
     <main>
         <section id="productBox">
@@ -90,16 +93,22 @@
                 <div class="imagen"><img src="./images/cpuCarrito.jpg" alt="cpu"></div>
                 <div class="contenido">
                     <ul>
-                        <li><h3>AMD Ryzen 5</h3></li>
-                        <li><p>Modelo: AMD Ryzen 5 5500</p></li>
-                        <li><p class="preciofinal">Precio: $99999.99</p></li>
+                        <li>
+                            <h3>AMD Ryzen 5</h3>
+                        </li>
+                        <li>
+                            <p>Modelo: AMD Ryzen 5 5500</p>
+                        </li>
+                        <li>
+                            <p class="preciofinal">Precio: $99999.99</p>
+                        </li>
                         <li>
                             <p>
                                 <label for="cantidad">Cantidad:</label>
                                 <select name="cantidad" id="cantidad">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
-                                    <option value="3" >3</option>
+                                    <option value="3">3</option>
                                     <option value="4">4</option>
                                 </select>
                             </p>
@@ -112,16 +121,22 @@
                 <div class="imagen"><img src="./images/monitorCarrito.png" alt="monitor"></div>
                 <div class="contenido">
                     <ul>
-                        <li><h3>Monitor 27 Gigabyte VA 165HZ</h3></li>
-                        <li><p>Modelo: Gigabyte G27FC-SA</p></li>
-                        <li><p class="preciofinal">Precio: $99999.99</p></li>
+                        <li>
+                            <h3>Monitor 27 Gigabyte VA 165HZ</h3>
+                        </li>
+                        <li>
+                            <p>Modelo: Gigabyte G27FC-SA</p>
+                        </li>
+                        <li>
+                            <p class="preciofinal">Precio: $99999.99</p>
+                        </li>
                         <li>
                             <p>
                                 <label for="cantidad">Cantidad:</label>
                                 <select name="cantidad" id="cantidad">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
-                                    <option value="3" >3</option>
+                                    <option value="3">3</option>
                                     <option value="4">4</option>
                                 </select>
                             </p>
@@ -134,16 +149,22 @@
                 <div class="imagen"><img src=".//images/motherCarrito.jpg" alt="mother"></div>
                 <div class="contenido">
                     <ul>
-                        <li><h3>Motherboard Asus</h3></li>
-                        <li><p>Modelo: A320M K Prime AM4</p></li>
-                        <li><p class="preciofinal">Precio: $99.99</p></li>
+                        <li>
+                            <h3>Motherboard Asus</h3>
+                        </li>
+                        <li>
+                            <p>Modelo: A320M K Prime AM4</p>
+                        </li>
+                        <li>
+                            <p class="preciofinal">Precio: $99.99</p>
+                        </li>
                         <li>
                             <p>
                                 <label for="cantidad">Cantidad:</label>
                                 <select name="cantidad" id="cantidad">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
-                                    <option value="3" >3</option>
+                                    <option value="3">3</option>
                                     <option value="4">4</option>
                                 </select>
                             </p>
@@ -155,50 +176,37 @@
 
         </section>
         <section id="productPrice">
-            <article>
-                <div class="discount">
-                    <h3>TU COMPRA</h3>
-                    <h5>¿Tenes algún cupón de descuento?</h5>
-                    <input type="text" placeholder="Ingresa tu cupón aquí...">
-                    <button type="submit" value="validarCupon" class="enviar">Validar cupón</button>
-                </div>
-                <div class="finalPrice">
-                    <h4>TOTAL COMPRA</h4>
-                    <h5 class="preciofinal">$999</h5>
-                    <button type="submit" value="Enviar" class="enviar">Realizar compra</button>
-                </div>
 
-            </article>
+            <div class="discount">
+                <h3>TU COMPRA</h3>
+                <br>
+                <h5>¿Tenes algún cupón de descuento?</h5>
+                <input type="text" placeholder="Ingresa tu cupón aquí...">
+                <br>
+                <button type="submit" value="validarCupon" class="enviar">Validar cupón</button>
+            </div>
+            <div class="finalPrice">
+                <h4>TOTAL COMPRA</h4>
+                <br>
+                <h5 class="preciofinal">$999</h5>
+                <br>
+                <button type="submit" value="Enviar" class="enviar">Realizar compra</button>
+            </div>
+
+
         </section>
     </main>
 
     <div class="wsp-ico">
         <section id="wsp">
-            <i class="fa-brands fa-whatsapp"></i>       
+            <i class="fa-brands fa-whatsapp"></i>
         </section>
     </div>
+    <!--Footer-->
 
-    <footer>
-        <section>
-            <h5>Guía</h5>
-            <p>¿Quienes Somos?</p>
-            <p>Preguntas Frecuentes</p>
-        </section>
-        <section>
-            <h5>Productos</h5>
-        </section>
-        <section>
-            <h5>Medios de pago</h5>
-        </section>
-        <section>
-            <h5>Redes Sociales</h5>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-regular fa-envelope"></i>
-            <i class="fa-brands fa-twitter"></i>            
-        </section>
-    </footer>
-    <script src="../public/js/productCart.js"></script>
+    <% include('./views/partials/footer.ejs') %>
+    
+    <script src="./public/js/productCart.js"></script>
 </body>
 
 </html>
