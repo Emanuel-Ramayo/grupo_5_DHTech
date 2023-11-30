@@ -2,88 +2,15 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/e5ae4ecceb.js" crossorigin="anonymous"></script>
+    <%- include('/partials/head.ejs')%>
     <link rel="stylesheet" href="./css/productCart.css">
     
-    <title>Carrito de compras - DH Tech</title>
 </head>
 
 <body>
-    <header>
-           
-        <section class="logo-titulo">
+    <!-- Header -->
+    <%- include('/partials/header.ejs')%>
 
-            <img id="logo" src="./images/Logo-original.jpg" alt="Logo de la Página">
-            
-            <a href="/index"><h1 id="titulo">DH Tech</h1></a>
-
-        </section>
-
-        <section class="iconos-header">
-            <div id="lupa">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            
-            <div id="user">
-                
-                <a href="/login"><i class="fa-solid fa-user"></i></a>
-            </div>
-            
-            <div id="carrito">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-
-            <div id="menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>            
-        </section>
-        
-
-        <nav class="barra">
-            
-            <div class="boton">
-                <div class="escritorio">
-                    <a href="#">Categorías</a>
-                </div>
-            </div>
-
-            <div class="boton">
-                <div class="escritorio">
-                    <a href="#">Armá tu PC</a>
-                </div>
-            </div>
-
-            <div class="boton">
-                <div class="escritorio">
-                    <a href="#">Notebooks</a>
-                </div>
-            </div>
-
-            <div class="boton">
-                <div class="escritorio">
-                    <a href="#">Monitores</a>
-                </div>
-            </div>
-
-            <div class="boton">
-                <div class="escritorio">
-                    <a href="#">Placas de Video</a>
-                </div>
-            </div>
-
-            <div class="boton">
-                <div class="escritorio">
-                    <a href="#">Microprocesadores</a>
-                </div>
-            </div>
-
-        </nav>            
-    </header>
     <main>
         <section id="productBox">
             <article>
@@ -178,26 +105,10 @@
         </section>
     </div>
 
-    <footer>
-        <section>
-            <h5>Guía</h5>
-            <p>¿Quienes Somos?</p>
-            <p>Preguntas Frecuentes</p>
-        </section>
-        <section>
-            <h5>Productos</h5>
-        </section>
-        <section>
-            <h5>Medios de pago</h5>
-        </section>
-        <section>
-            <h5>Redes Sociales</h5>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-regular fa-envelope"></i>
-            <i class="fa-brands fa-twitter"></i>            
-        </section>
-    </footer>
+    <!-- footer -->
+    <%- include('/partials/footer.ejs')%>
+    
+
     <script src="../public/js/productCart.js"></script>
 </body>
 

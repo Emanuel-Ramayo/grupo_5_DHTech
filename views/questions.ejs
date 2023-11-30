@@ -2,10 +2,11 @@
 <html>
 
 <head>
-    <title>Preguntas Frecuentes</title>
+    <%- include('/partials/head.ejs')%>
 </head>
 
 <body>
+    <%- include('/partials/header.ejs')%>
     <h1>Preguntas Frecuentes</h1>
     <h2>¿Cómo puedo rastrear mi pedido?</h2>
     <p>Una vez que tu pedido ha sido enviado, recibirás un correo electrónico con un número de seguimiento. Puedes usar
@@ -19,7 +20,7 @@
     <p>Sí, aceptamos devoluciones y cambios dentro de los 30 días posteriores a la recepción del pedido. Los artículos
         deben estar en su estado original y en su embalaje original.</p>
 
-    <% include('./views/partials/footer.html') %>
+        <%- include('/partials/footer.ejs')%>
 </body>
 
 </html>

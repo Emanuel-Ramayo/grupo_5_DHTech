@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Medios de Pago</title>
+    <%- include('/partials/head.ejs')%>
 </head>
 <body>
+    <%- include('/partials/header.ejs')%>
     <h1>Medios de Pago</h1>
     <ul>
         <li>
@@ -19,6 +20,6 @@
             <p>Con este método se descuenta un 10% del valor de la compra.</p>
         </li>
     </ul>
-    <% include('./views/partials/footer.html') %>
+    <%- include('/partials/footer.ejs') %>
 </body>
 </html>

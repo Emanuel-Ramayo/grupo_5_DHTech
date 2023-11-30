@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Quiénes somos</title>
+    <%- include('/partials/head.ejs')%>
 </head>
 <body>
+    <%- include('/partials/header.ejs')%>
     <h1>Quiénes somos</h1>
     <p>Somos un grupo de estudiantes catamarqueños del curso de Programación Web Full Stack de Digital House y este es nuestro proyecto final de dicho curso.</p>
     <h2>Nuestro Mercado</h2>
     <p>Nuestro marketplace se especializa en ofrecer una amplia gama de componentes de computadoras, incluyendo hardware, accesorios y periféricos.</p>
     
-    <% include('./views/partials/footer.html') %>
+    <%- include('/partials/footer.ejs')%>
 </body>
 </html>
