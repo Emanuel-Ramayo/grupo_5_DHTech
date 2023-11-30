@@ -2,7 +2,6 @@
 /* GENERALES */
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -20,57 +19,117 @@ body {
 .titulos {
     font-size: 1.5rem;
 }
+/*============================================================================================================================================*/
+/* Nuevo header */
 
-/* HEADER */
-
-.header-arriba {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 3rem;
+.main-header {
+    background-color: #eae7de;
+    padding: 20px;
+}
+/* Estilo del logo */
+.logo {
+    width: 80px;
 }
 
-.logo-container {
-    width: 25px;
-    height: 25px;
-    object-fit: cover;
-}
-
-.logo-container > img {
-    width: 100%;
-    height: 100%;
-}
-
-.header-icons  {
-    display: none;
-}
-
-/* MENU */
-
-.menu-links {
-    list-style: none;
-}
-
-
-.menu-link > a{
-    text-decoration: none;
-}
-
-.menu-link {
-    height: 2rem;
-    padding: .5rem;
-}
-
-.menu-link:hover {
-    cursor: pointer;
-}
-
-.menu {
-    display: none;
-    width: 100%;
+/* Estilo del Nombre */
+.nombre {
     text-align: center;
 }
 
+/* Estilo para botones de navegacion */
+.main-header-bottom ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header-bottom a {
+    text-decoration: none;
+    color: #3483FA;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+/* Oculta la Barra de Navegacion */
+.main-header-bottom {
+    display: none;
+}
+
+/* Estilo para el Boton Hamburguesa */
+.hamburguer-button {
+    background-color: #eae7de;
+    color: #3483FA;
+    display: block;
+    max-width: 40px;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+
+/* Media Query para Escritorio */
+@media (min-width: 768px){
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    /* Logo, titulo y class access-point */
+    .main-header-top {
+        display: flex;
+        border: solid 3px blue;
+        justify-content: space-between;
+    }
+    
+    /* Estilos para Login, Crear Cuenta, Mi Carrito */
+    .access-point {
+        list-style: none;
+        text-align: right;
+    }
+    
+    .access-point a {
+        text-decoration: none;
+        color: #3483FA;
+        display: inline-block;
+        font-size: 17px;
+    }
+    
+    /* Oculta el Boton Hamburguesa */
+    .hamburguer-button {
+        display: none;
+    }
+    
+    /* Estilos de la barra de navegacion */
+    .main-header-bottom {
+        border: solid 3px red;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-header-bottom ul {
+        display: flex;
+    }
+
+    .main-header-bottom li {
+        margin-left: 10px;
+    }
+
+    .main-header-bottom a {
+        color: white;
+    }
+
+    .boton {
+        display: flex;
+        background-color: #3483FA;
+        border-radius: 8px;
+        margin-right: 1vw;
+        text-align: center;
+    }
+
+}
+/* ========================================================================================================================================== */
 /* clase que muestra el menu */
 
 .showMenu {
