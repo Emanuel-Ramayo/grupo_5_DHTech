@@ -9,6 +9,7 @@ const router = express.Router();
 
 /* Paso 3: Ponemos las routes relacionadas */
 router.get('/', function(req, res){
+    /* res.send('hola'); */
     res.render('register');
 })
 

@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 const path = require('node:path');
-
+app.set('view engine', 'ejs');
 
 /* Llamamos al archivo de ruotes correspondiente */
-const registerRouter = require('./src/routers/registerRouter.js');
+const registerRouter = require('./routers/registerRouter.js');
 
 
 /* Link con app.use a la variable registerRouter */
