@@ -4,7 +4,7 @@
   "description": "Nuestra página web corresponde a un e-commerce diseñado para **DH Tech**, una empresa que se dedica a la comercialización de componentes de PC de primera categoría. Con sede en la provincia de Catamarca, Argentina, su servicio se extiende a nivel nacional, ofreciendo envíos dentro de todo el territorio argentino.",
   "main": "app.js",
   "scripts": {
-    "start": "node --watch app.js",
+    "start": "node --watch src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
