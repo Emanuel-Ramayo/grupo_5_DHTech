@@ -1,89 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle del producto</title>
-    <!--Fuente de Letra-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    <!--Iconos-->
-    <script src="https://kit.fontawesome.com/e5ae4ecceb.js" crossorigin="anonymous"></script>
 
+<head>
+    <%- include('./partials/head') %>
     <link rel="stylesheet" href="./css/productDetail.css">
 </head>
-<body>
-    <header>
 
-        <section class="logo-titulo">
-
-            <img id="logo" src="./images/logo-original.jpg" alt="Logo de la Página">
-            
-            <h1 id="titulo">DH Tech</h1>
-
-        </section>
-
-        <section class="iconos-header">
-            <div id="lupa">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            
-            <div id="user">
-                <i class="fa-solid fa-user"></i>
-            </div>
-            
-            <div id="carrito">
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-
-            <div id="menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>            
-        </section>
-        
-
-        <nav class="barra">
-            
-            <div class="boton">
-                <div class="escritorio">
-                    <a href="#">Categorías</a>
-                </div>
-            </div>
-
-            <div class="boton">
-                <div class="escritorio">
-                    <a href="#">Armá tu PC</a>
-                </div>
-            </div>
-
-            <div class="boton">
-                <div class="escritorio">
-                    <a href="#">Notebooks</a>
-                </div>
-            </div>
-
-            <div class="boton">
-                <div class="escritorio">
-                    <a href="#">Monitores</a>
-                </div>
-            </div>
-
-            <div class="boton">
-                <div class="escritorio">
-                    <a href="#">Placas de Video</a>
-                </div>
-            </div>
-
-            <div class="boton">
-                <div class="escritorio">
-                    <a href="#">Microprocesadores</a>
-                </div>
-            </div>
-
-        </nav>            
-             
-    </header>
+<body>   
+    <%- include('./partials/header') %>
     
     <main>
         <section class="seccion-imagenes">
@@ -156,70 +80,59 @@
         </section>
     </main>
 
-    <footer>
+<div class="final">
+    <section class="seccion-acerca-producto">
 
-        <section class="seccion-acerca-producto">
-
-            <h3>Acerca del Producto</h3>            
+        <h3>Acerca del Producto</h3>            
+            
+        <p>A menudo se subestima al monitor. La verdad es que los monitores forman un efecto sinérgico y ofrecen el mejor rendimiento de los componentes de la PC.
+                Los monitores para juegos de GIGABYTE ofrecen las mejores especificaciones y calidad, los usuarios realmente pueden disfrutar de un rendimiento de primer nivel
+                sin necesidad de extravagancias.</p>
                 
-            <p>A menudo se subestima al monitor. La verdad es que los monitores forman un efecto sinérgico y ofrecen el mejor rendimiento de los componentes de la PC.
-                    Los monitores para juegos de GIGABYTE ofrecen las mejores especificaciones y calidad, los usuarios realmente pueden disfrutar de un rendimiento de primer nivel
-                    sin necesidad de extravagancias.</p>
-                    
-            <h4>Caracteristicas:</h4>
-                    
-            <div class="lista">
-
-                <ul>
-                    <li>Modelo: GIGABYTE G27FC-SA</li>
-                    <br>
-                    <li>Tamaño del panel (diagonal): 27" VA 1500R</li>
-                    <br>   
-                    <li>Resolución verdadera: 1920 x 1080 (FHD)</li>
-                    <br>
-                    <li>Colores de pantalla: 8 bits</li>
-                    <br>
-                    <li>Ángulo de visión 178 ° (H) / 178 ° (V)</li>
-                    <br>
-                    <li>Tiempo de respuesta: 1 ms (MPRT)</li>
-                    <br>
-                    <li>Frecuencia de actualización: 165 Hz</li>
-                    <br>
-                    <li>Entrada de señal: HDMI 1.4 x2, Display Port 1.2 x1</li>
-                    <br>
-                    <li>Enchufe de audífonos: si</li>
-                    <br>
-                    <li>Puerto (s) USB: USB 3.0 x2</li>
-                    <br>
-                    <li>El consumo de energía :55W (máximo)</li>
-                    <br>
-                    <li>Ajuste de altura (mm): 1 de 30 mm</li>
-                    <br>
-                    <li>Montaje en pared VESA (mm:) 100 * 100 mm</li>
-                    <br>
-                    <li>Dimensión con soporte (WxHxD): 610,3 * 531 * 203</li>
-                    <br>
-                    <li>Dimensión sin soporte (WxHxD): 610,3 * 367,4 * 84,5</li>
-                </ul>
+        <h4>Caracteristicas:</h4>
                 
-            </div>                
-                
-        </section>        
-    </footer>
-    
-    <section class="redes">
-        <h5>Redes Sociales</h5>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-regular fa-envelope"></i>
-        <i class="fa-brands fa-twitter"></i>            
-    </section>
+        <div class="lista">
 
-        <div class="wsp-ico">
-            <section id="wsp">
-                <i class="fa-brands fa-whatsapp"></i>       
-            </section>
-        </div>
+            <ul>
+                <li>Modelo: GIGABYTE G27FC-SA</li>
+                <br>
+                <li>Tamaño del panel (diagonal): 27" VA 1500R</li>
+                <br>   
+                <li>Resolución verdadera: 1920 x 1080 (FHD)</li>
+                <br>
+                <li>Colores de pantalla: 8 bits</li>
+                <br>
+                <li>Ángulo de visión 178 ° (H) / 178 ° (V)</li>
+                <br>
+                <li>Tiempo de respuesta: 1 ms (MPRT)</li>
+                <br>
+                <li>Frecuencia de actualización: 165 Hz</li>
+                <br>
+                <li>Entrada de señal: HDMI 1.4 x2, Display Port 1.2 x1</li>
+                <br>
+                <li>Enchufe de audífonos: si</li>
+                <br>
+                <li>Puerto (s) USB: USB 3.0 x2</li>
+                <br>
+                <li>El consumo de energía :55W (máximo)</li>
+                <br>
+                <li>Ajuste de altura (mm): 1 de 30 mm</li>
+                <br>
+                <li>Montaje en pared VESA (mm:) 100 * 100 mm</li>
+                <br>
+                <li>Dimensión con soporte (WxHxD): 610,3 * 531 * 203</li>
+                <br>
+                <li>Dimensión sin soporte (WxHxD): 610,3 * 367,4 * 84,5</li>
+            </ul>
+            
+        </div>                
+            
+    </section>  
+</div>  
+
+<%- include('./partials/footer') %>
+
+<%- include('./partials/wsp') %>
 
     </body>
     </html>
