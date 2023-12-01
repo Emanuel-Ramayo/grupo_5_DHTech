@@ -1,7 +1,15 @@
-
 const express = require('express');
 const app = express();
 const path = require('node:path');
+
+
+/* Llamamos al archivo de ruotes correspondiente */
+const registerRouter = require('./src/routers/registerRouter.js');
+
+
+/* Link con app.use a la variable registerRouter */
+app.use('/register', registerRouter);
+
 
 const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
@@ -19,9 +27,7 @@ app.get('/login', function(req, res){
     res.sendFile(path.resolve(__dirname, './views/login.html'))
 })
 
-app.get('/register', function(req, res){
-    res.sendFile(path.resolve(__dirname, './views/register.html'))
-})
+
 
 app.get('/productCart', function(req, res){
     res.sendFile(path.resolve(__dirname, './views/productCart.html'))
