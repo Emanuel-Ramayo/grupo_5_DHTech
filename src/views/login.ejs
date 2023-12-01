@@ -19,9 +19,7 @@
     />
   </head>
   <body>
-    <header>
-      <!-- Agregar navbar -->
-    </header>
+    <%- include('./partials/header') %>
 
     <main>
       <h1>Ingresa a tu cuenta</h1>
@@ -63,9 +61,11 @@
       
       <p><a href="/">Volver a la página de inicio</a></p>
     </main>
-    <footer>
-      <!-- Agregar footer del sitio -->
-    </footer>
+    
+    <%- include('./partials/footer') %>
+
+    <%- include('./partials/wsp') %>
+
     <script src="../js/login.js"></script>
   </body>
 </html>

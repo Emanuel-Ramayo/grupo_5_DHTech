@@ -1,69 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <!--Fuente de Letra-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    <!-- Link a Iconos -->
-    <script src="https://kit.fontawesome.com/ced4b68b20.js" crossorigin="anonymous"></script>
 
-    <title>DH Tech</title>
+<head>
+    <%- include('./partials/head') %>
+    <link rel="stylesheet" href="./css/index.css">  
 </head>
 <body>
-    <header class="main-header">
-        
-        <!-- Logo y Titulo -->
-        <div class="main-header-top">
-            <img src="/images/logo-original.jpg" class="logo">
-            <h2 class="nombre">DH TECH</h2>
-
-            <!-- Acceso Principal -->
-            <ul class="access-point">
-                <li><a href="#">Crear Cuenta</a></li>
-                <li><a href="#">Mi Carrito</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </div>
-
-        <!-- Boton Hamburguesa -->
-        <a href="#" class="hamburguer-button">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-
-        <!-- Barra de Navegacion -->
-        <nav class="main-header-bottom">
-            <ul class="navbar">
-
-                <div class="boton">
-                    <li><a href="#">Categorías</a></li>
-                </div>
-
-                <div class="boton">
-                    <li><a href="#">Arma tu PC</a></li>
-                </div>
-
-                <div class="boton">
-                    <li><a href="#">Notebooks</a></li>
-                </div>
-
-                <div class="boton">
-                    <li><a href="#">Monitores</a></li>
-                </div>
-
-                <div class="boton">
-                    <li><a href="#">Placa de Video</a></li>
-                </div>
-
-                <div class="boton">
-                    <li><a href="#">Microprocesadores</a></li>
-                </div>
-            </ul>
-        </nav>
-    </header>
+   <%- include('./partials/header') %>
 
     <main class="container">
         <section class="novedades">
@@ -128,17 +71,10 @@
         </section>
 
     </main>
-    <footer>
-        <div class="container footer">
-            <h2>DH Tech</h2>
-            <div class="redes">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-        </div>
-    </footer>
+
+    <%- include('./partials/footer') %>
+
+    <%- include('./partials/wsp') %>
     
     <script src="./js/index.js"></script>
 </body>

@@ -9,6 +9,8 @@ body {
     font-family: 'Lato', sans-serif;     
 }
 
+/* -------------------<header----------------------------- */
+
 header {
     background-color: #eae7de;
     width: 100%;
@@ -103,6 +105,8 @@ header {
 h1 {        
     font-size: 40px;
 }
+
+/* -------------------</header----------------------------- */
 
 
 #monitor-imagen-1{
