@@ -9,6 +9,8 @@ body {
     font-family: 'Lato', sans-serif;     
 }
 
+/* -------------------<header----------------------------- */
+
 header {
     background-color: #eae7de;
     width: 100%;
@@ -103,6 +105,8 @@ header {
 h1 {        
     font-size: 40px;
 }
+
+/* -------------------</header----------------------------- */
 
 
 #monitor-imagen-1{
@@ -328,7 +332,7 @@ width: 85%;
     justify-content: center;
 }
 
-footer {
+.final {
     background-color: #eae7de;
     width: 95%;
     height: 745px;
@@ -369,6 +373,13 @@ footer {
 .lista {    
     width: 100%;
     padding-left: 18px;
+}
+
+footer {
+    background-color: #eae7de;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .redes {
@@ -492,7 +503,7 @@ footer {
         margin: auto;
     }
 
-    footer {
+    .final {
         max-width: 950px;
         margin: auto;
     }

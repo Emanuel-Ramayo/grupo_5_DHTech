@@ -2,14 +2,13 @@
 <html lang="es">
 
 <head>
-    <%- include('/partials/head.ejs')%>
-    <link rel="stylesheet" href="./css/productCart.css">
-    
+    <%- include('./partials/head.ejs')%>
+    <link rel="stylesheet" href="./css/productCart.css">    
 </head>
 
 <body>
     <!-- Header -->
-    <%- include('/partials/header.ejs')%>
+    <%- include('./partials/header.ejs')%>
 
     <main>
         <section id="productBox">
@@ -99,15 +98,11 @@
         </section>
     </main>
 
-    <div class="wsp-ico">
-        <section id="wsp">
-            <i class="fa-brands fa-whatsapp"></i>       
-        </section>
-    </div>
-
+  
     <!-- footer -->
-    <%- include('/partials/footer.ejs')%>
+    <%- include('./partials/footer.ejs')%>
     
+    <%- include('./partials/wsp') %>
 
     <script src="../public/js/productCart.js"></script>
 </body>
