@@ -20,6 +20,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     position: fixed;
+    top: 0;
 }
 
 .logo-titulo {
