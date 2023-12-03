@@ -1,85 +1,97 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-
     <%- include('./partials/head') %>
-    <link rel="stylesheet" href="./css/index.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/header.css">
-    
 </head>
 <body>
 
-   <%- include('./partials/header') %>
+    <%- include('./partials/header') %>
 
-    <main class="container">
-        <section class="novedades">
-            <h2 class="titulos">Novedades</h2>
-            <div class="carrousel">
-                <div id="btnLeft" class="carrousel-btn">
-                    <i class="fa-solid fa-angle-left"></i>
+    <div class="swiper mySwiper container">
+        <div class = "swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Lorem Impsut</h3>
+                    <p> Descripcion</p>
                 </div>
-                <div class="img-carrousel-container">
-                    <img id="imgContainer" src="./images/monitor.png" alt="">
-                </div>
-                <div id="btnRigth" class="carrousel-btn">
-                    <i class="fa-solid fa-angle-right"></i>
-                </div>
+                <img src="./images/placaDeVideo.png" alt="">
             </div>
-        </section>
+        </div>
 
-        <section class="ofertas">
-            <h2 class="titulos">Ofertas</h2>
-            <article class="oferta">
-                <div class="oferta-img-container">
-                    <img src="./images/cpu.jpg" alt="Cpu">
+        <div class = "swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Lorem Impsut</h3>
+                    <p> Descripcion</p>
                 </div>
-                <div class="oferta-descripcion">
-                    <h3 class="oferta-producto">AMD Ryzen 5 5600</h3>
-                </div>
-                <div class="oferta-precios">
-                    <h3 class="oferta-precio">$ 155.000</h3>
-                    <h4 class="oferta-precio-antiguo">$ 175.000</h4>
+                <img src="./images/placaDeVideo.png" alt="">
+            </div>
+        </div>
 
-                    <div class="btn-comprar">Comprar</div>
+        <div class = "swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-txt">
+                    <h3>Lorem Impsut</h3>
+                    <p> Descripcion</p>
                 </div>
-            </article>
-            <article class="oferta">
-                <div class="oferta-img-container">
-                    <img src="./images/monitor4.png" alt="Cpu">
-                </div>
-                <div class="oferta-descripcion">
-                    <h3 class="oferta-producto">Monitor Gigabyte</h3>
-                </div>
-                <div class="oferta-precios">
-                    <h3 class="oferta-precio">$ 100.000</h3>
-                    <h4 class="oferta-precio-antiguo">$ 125.000</h4>
+                <img src="./images/placaDeVideo.png" alt="">
+            </div>
+        </div>
+    </div>
 
-                    <div class="btn-comprar">Comprar</div>
-                </div>
-            </article>
-            <article class="oferta">
-                <div class="oferta-img-container">
-                    <img src="./images/placaDeVideo.png" alt="Cpu">
-                </div>
-                <div class="oferta-descripcion">
-                    <h3 class="oferta-producto">Gigabyte RTX 3060</h3>
-                </div>
-                <div class="oferta-precios">
-                    <h3 class="oferta-precio">$ 280.000</h3>
-                    <h4 class="oferta-precio-antiguo">$ 319.000</h4>
+    <section class="ofertas">
+        <h2 class="titulos">Ofertas</h2>
+        <article class="oferta">
+            <div class="oferta-img-container">
+                <img src="./images/cpu.jpg" alt="Cpu">
+            </div>
+            <div class="oferta-descripcion">
+                <h3 class="oferta-producto">AMD Ryzen 5 5600</h3>
+            </div>
+            <div class="oferta-precios">
+                <h3 class="oferta-precio">$ 155.000</h3>
+                <h4 class="oferta-precio-antiguo">$ 175.000</h4>
 
-                    <div class="btn-comprar">Comprar</div>
-                </div>
-            </article>
-        </section>
+                <div class="btn-comprar">Comprar</div>
+            </div>
+        </article>
+        <article class="oferta">
+            <div class="oferta-img-container">
+                <img src="./images/monitor4.png" alt="Cpu">
+            </div>
+            <div class="oferta-descripcion">
+                <h3 class="oferta-producto">Monitor Gigabyte</h3>
+            </div>
+            <div class="oferta-precios">
+                <h3 class="oferta-precio">$ 100.000</h3>
+                <h4 class="oferta-precio-antiguo">$ 125.000</h4>
 
-    </main>
+                <div class="btn-comprar">Comprar</div>
+            </div>
+        </article>
+        <article class="oferta">
+            <div class="oferta-img-container">
+                <img src="./images/placaDeVideo.png" alt="Cpu">
+            </div>
+            <div class="oferta-descripcion">
+                <h3 class="oferta-producto">Gigabyte RTX 3060</h3>
+            </div>
+            <div class="oferta-precios">
+                <h3 class="oferta-precio">$ 280.000</h3>
+                <h4 class="oferta-precio-antiguo">$ 319.000</h4>
 
+                <div class="btn-comprar">Comprar</div>
+            </div>
+        </article>
+    </section>
+    <hr>
     <%- include('./partials/footer') %>
-
     <%- include('./partials/wsp') %>
-    
-    <script src="./js/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js.script.js" ></script>
 </body>
 </html>
