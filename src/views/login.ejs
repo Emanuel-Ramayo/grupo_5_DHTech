@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/login.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <%- include('./partials/head') %>
+    <!-- <link rel="stylesheet" href="./css/login.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
-  <body>
+
+  <body id="login">
     <%- include('./partials/header') %>
 
-    <main>
+    <main class="main-login">
       <h1>Ingresa a tu cuenta</h1>
       <section class="formulario-login">
         <h2>LOGIN</h2>
@@ -59,13 +47,15 @@
         </form>
       </section>
       
+      <p><a href="/register">¿Aun no tienes cuenta? REGISTRATE</a></p>
       <p><a href="/">Volver a la página de inicio</a></p>
     </main>
     
-    <%- include('./partials/footer') %>
+    <div class="footer-login">
+      <%- include('./partials/footer') %>
+    </div>
 
     <%- include('./partials/wsp') %>
 
-    <script src="../js/login.js"></script>
   </body>
 </html>

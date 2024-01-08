@@ -1,24 +1,24 @@
 
-const menuBtn = document.getElementById("menuBtn");
-const menu = document.getElementById("menu");
+// const menuBtn = document.getElementById("menuBtn");
+// const menu = document.getElementById("menu");
 
-const btnLeft = document.getElementById("btnLeft");
-const btnRigth = document.getElementById("btnRigth");
-const imgContainer = document.getElementById("imgContainer");
-const IMAGENES = [
-    './images/monitor.png',
-    './images/monitor2.png',
-    './images/monitor3.png'
-]
+// const btnLeft = document.getElementById("btnLeft");
+// const btnRigth = document.getElementById("btnRigth");
+// const imgContainer = document.getElementById("imgContainer");
+// const IMAGENES = [
+//     './images/monitor.png',
+//     './images/monitor2.png',
+//     './images/monitor3.png'
+// ]
 
-let index = 0
-menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('showMenu')
-})
+// let index = 0
+// menuBtn.addEventListener('click', () => {
+//     menu.classList.toggle('showMenu')
+// })
 
-function changeImageNovedades(index,cb) {
-    cb(index)
-}
+// function changeImageNovedades(index,cb) {
+//     cb(index)
+// }
 /*
 btnLeft.addEventListener('click', () => {
     console.log(`Izquierda. Index es: ${index}`)

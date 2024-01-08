@@ -1,24 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <!-- Fuentes de Letra -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    <!-- Link de Css -->
-    <link rel="stylesheet" href="../css/register.css">
-    <!-- Link de Iconos -->
-    <script src="https://kit.fontawesome.com/ced4b68b20.js" crossorigin="anonymous"></script>
 
+<head>
+    <%- include('./partials/head') %>
+    <!-- <link rel="stylesheet" href="./css/register.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
+
+<body id="body-register">
     
     <%- include('./partials/header') %>
 
-    <main>
+    <main id="main-register">
+
+        <h1>Formulario de Registro</h1>
+        
         <form action="#" method="get">
             <section class="form-text">
                 <label for="nombre">Nombre</label>
@@ -63,11 +59,11 @@
                 <label for="repContraseña">Repetir Contraseña</label>
                 <input type="password" id="repContraseña" name="repContraseña" required>
             </section>
-            <section class="form-check">
+            <section class="form-check2">
                 <input type="checkbox" id="terminosCondiciones" name="terminosCondiciones" required>
                 <label for="terminosCondiciones">Acepto los Terminos y Condiciones</label>
             </section>
-            <div class="button">
+            <div class="button-register">
                 <button type="submit" class="botonReg-log">Registrarse</button>
             </div>
             <label class="form-check">Registrarse con:</label>
@@ -76,7 +72,7 @@
                 <button type="button" onclick="registerWithFacebook()" class="icono"><i class="fa-brands fa-facebook"></i> Facebook</button>
             </section>
             <label class="form-check"> Ya tienes una Cuenta?</label>
-            <div class="button">
+            <div class="button-register">
                 <button onclick="window.location.href='login'" class="botonReg-log">Iniciar Sesion</button>
             </div>
         </form>

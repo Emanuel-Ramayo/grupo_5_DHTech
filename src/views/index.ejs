@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <%- include('./partials/head') %>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body id="index">
 
     <%- include('./partials/header') %>
 
-    <div class="swiper mySwiper container">
+    <!-- <div class="swiper mySwiper container">
         <div class = "swiper-wrapper">
             <div class="swiper-slide">
                 <div class="swiper-txt">
@@ -21,13 +20,13 @@
         </div>
 
         <div class = "swiper-wrapper">
-            <div class="swiper-slide">
+            <a href="/productDetail"><div class="swiper-slide">
                 <div class="swiper-txt">
-                    <h3>Placa de Video</h3>
-                    <p> Descripcion</p>
+                    <h3>MONITOR 27 GIGABYTE</h3>
+                    <p>VA 165HZ</p>
                 </div>
-                <img src="./images/placaDeVideo.png" alt="">
-            </div>
+                <img src="./images/monitor.png" alt="">
+            </div></a>
         </div>
 
         <div class = "swiper-wrapper">
@@ -39,7 +38,26 @@
                 <img src="./images/placaDeVideo.png" alt="">
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <section class="seccion-imagenes-index">
+        <br>
+        <br>
+        <br>
+        <div class="carrusel-index">
+            <a href="/productdetail">
+            <img id="monitor-imagen-index" src="./images/monitor-g.jpg" alt="Foto frontal del monitor"></a>
+            
+            <div class="selector-imagenes">
+                <i id="circulos-fotos" class="fa-solid fa-circle"></i>
+                <i id="circulos-fotos" class="fa-regular fa-circle"></i>
+                <i id="circulos-fotos" class="fa-regular fa-circle"></i>
+                <i id="circulos-fotos" class="fa-regular fa-circle"></i>
+                <i id="circulos-fotos" class="fa-regular fa-circle"></i>
+            </div>
+        </div>
+
+    </section>
 
     <section class="ofertas">
         <h2 class="titulos">Ofertas</h2>

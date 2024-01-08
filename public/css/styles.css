@@ -1,4 +1,3 @@
-
 /* ------------------------------ Secciones Globales------------------------------ */
 
 /* Estilo base */
@@ -12,8 +11,8 @@
 /* Estilos del Body */
 
 body {
-    background-color: white;  
-    font-family: 'Lato', sans-serif;   
+    background-color: white;
+    font-family: 'Lato', sans-serif;
 }
 
 /* header */
@@ -57,7 +56,7 @@ header {
     width: 50%;
     height: 100%;
     display: flex;
-    align-items: center;  
+    align-items: center;
     justify-content: flex-end;
 }
 
@@ -72,7 +71,7 @@ header {
 
 .iconos-header i:hover {
     font-size: 40px;
-    color: rgb(55, 206, 206);    
+    color: rgb(55, 206, 206);
 }
 
 .barra {
@@ -89,15 +88,15 @@ header {
 
 .escritorio {
     display: flex;
-    background-color: #3483FA;    
+    background-color: #3483FA;
     width: 120px;
     height: 35px;
     border: 5px solid #3483FA;
-    border-radius: 20px;    
+    border-radius: 20px;
     justify-content: center;
-    align-items: center; 
-    margin-right: 1vw;     
-    transition: all 1000ms;  
+    align-items: center;
+    margin-right: 1vw;
+    transition: all 1000ms;
 }
 
 .escritorio:hover {
@@ -107,16 +106,16 @@ header {
 
 .escritorio a {
     text-decoration: none;
-    font-size: 12px;   
+    font-size: 12px;
     color: white;
 }
 
 #carrito {
-    display: none;
+    display: block;
 }
 
 
-h1 {        
+h1 {
     font-size: 40px;
 }
 
@@ -159,7 +158,7 @@ footer p {
 }
 
 #wsp {
-    
+
     background-color: rgb(112, 241, 112);
     color: white;
     font-size: 12vw;
@@ -169,7 +168,7 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 450ms; 
+    transition: all 450ms;
 }
 
 #wsp:hover {
@@ -182,29 +181,39 @@ footer p {
 
 /* Estilos del Body */
 body#index {
-    background: linear-gradient(
-    180deg, 
-    rgba(204, 204, 204, 1) 0%, 
-    rgba(238, 238, 238, 1) 50%, 
-    rgba(204, 204, 204, 1) 100%
-    );
+    background-color: white;
     min-height: 50vh;
 }
 
-/* Estilos del swiper o carrusel */
-.container {
-    max-width: 1040px;
-    margin: 0 auto;
-    display: flex;
+.seccion-imagenes-index {
+    margin-top: 4vh;
 }
 
-.swiper{
+#monitor-imagen-index {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+
+/* Estilos del swiper o carrusel */
+.container {
+    max-width: 100%;
+    margin: auto;
+    display: flex;    
+}
+
+.swiper {
     margin-top: 200px;
     z-index: -1;
 }
 
 .swiper-slide {
-    margin-bottom: 50px;
+    margin: auto;
+    z-index: -1;
+    margin-top: 15vh;
+    margin-bottom: 20px;
     background-color: #ffffff;
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
@@ -217,13 +226,14 @@ body#index {
     width: 295px;
     border-radius: 15px;
     height: 295px;
-    margin-top: 140px;
-    
+    margin-top: 85px;
+
 }
 
 .swiper-txt {
     position: absolute;
     padding: 25px;
+    color: #000;
 }
 
 .swiper-txt h3 {
@@ -236,7 +246,9 @@ body#index {
 /* Estilos Para Section Ofertas */
 
 .ofertas {
-    margin-top: 3rem;
+    /* margin-top: 2rem; */
+    margin-top: 1.5rem;
+    margin-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -264,7 +276,7 @@ body#index {
     object-fit: cover;
 }
 
-.oferta-img-container > img {
+.oferta-img-container>img {
     width: 100%;
     height: 100%;
 }
@@ -286,11 +298,12 @@ body#index {
     width: 150px;
 }
 
-.oferta-precio{
+.oferta-precio {
     font-size: 1.2rem;
+    color: #3483FA;;
 }
 
-.oferta-precio-antiguo{
+.oferta-precio-antiguo {
     font-size: .8rem;
     text-decoration: line-through;
     font-style: italic;
@@ -300,58 +313,57 @@ body#index {
     margin-top: 1rem;
     padding: .5rem .3rem;
     text-align: center;
-    border-radius: .3rem;
+    border-radius: 20px;
     background-color: #3483FA;
+    border: 5px solid #3483FA;
+    cursor: pointer;
+    transition: all 1000ms;
     color: white;
-    border: 1px solid transparent;
-    transition: background ease-in .2s ;
 }
 
 .btn-comprar:hover {
-    background-color: white;
-    color: #4d55b5;
-    border-color: #4d55b5;
-    cursor: pointer;
+    background-color: rgb(55, 206, 206);
+    border: 5px solid white;
 }
+
 
 
 /* ------------------------------ Secciones del ProducDetail ------------------------------ */
 
 /* seccion-imagenes */
 
-#monitor-imagen-1{
+#monitor-imagen-1 {
     display: flex;
-    width: 80%;    
+    width: 80%;
     margin: auto;
 }
 
 .selector-imagenes {
     display: flex;
     justify-content: center;
-    gap: 10px; 
-    height: 25px;   
+    gap: 10px;
+    height: 25px;
 }
-    
+
 #circulos-fotos {
     font-size: 15px;
     cursor: pointer;
     color: #3483FA;
-    transition: all 500ms;   
+    transition: all 500ms;
 }
 
 #circulos-fotos:hover {
     font-size: 20px;
-    color: rgb(55, 206, 206); 
+    color: rgb(55, 206, 206);
 }
 
-.seccion-imagenes h2
-{
+.seccion-imagenes h2 {
     margin-bottom: 20px;
 }
 
 /* seccion-producto */
 
-.seccion-producto {    
+.seccion-producto {
     background-color: #eae7de;
     width: 95%;
     height: 250px;
@@ -360,7 +372,7 @@ body#index {
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
 }
 
 #nombre-producto {
@@ -368,13 +380,13 @@ body#index {
     height: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 
-.seccion-pagos {    
+.seccion-pagos {
     background-color: #eae7de;
     width: 55%;
-    height: 230px;    
+    height: 230px;
 }
 
 #seleccion-titulo {
@@ -390,9 +402,9 @@ body#index {
     flex-wrap: wrap;
     justify-content: center;
     font-size: 14px;
-    font-style: italic;   
+    font-style: italic;
     margin: auto;
-    
+
 }
 
 .pago1 {
@@ -404,8 +416,8 @@ body#index {
     margin-top: 15px;
 }
 
-.pago1 h3{
-width: 85%;
+.pago1 h3 {
+    width: 85%;
 }
 
 .pago2 {
@@ -414,12 +426,12 @@ width: 85%;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 35px;   
+    margin-top: 35px;
 }
 
-.pago2 h3{
+.pago2 h3 {
     width: 85%;
-    }
+}
 
 .pago3 {
     display: flex;
@@ -427,25 +439,25 @@ width: 85%;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 35px;    
+    margin-top: 35px;
 }
 
-.pago3 h3{
+.pago3 h3 {
     width: 85%;
-    }
+}
 
 #circulos-pago {
-        margin-top: 5px;
-        display: flex;
-        align-content: flex-start;
-        cursor: pointer;
-        transition: all 500ms;
-        color: #3483FA;
+    margin-top: 5px;
+    display: flex;
+    align-content: flex-start;
+    cursor: pointer;
+    transition: all 500ms;
+    color: #3483FA;
 }
 
 #circulos-pago:hover {
     font-size: 20px;
-    color: rgb(55, 206, 206); 
+    color: rgb(55, 206, 206);
 }
 
 .seccion-compra {
@@ -457,7 +469,7 @@ width: 85%;
     height: 230px;
 }
 
-.precios {  
+.precios {
     width: fit-content;
     display: flex;
     flex-direction: row;
@@ -477,8 +489,13 @@ width: 85%;
 }
 
 @keyframes letras {
-    0% { color: black; }
-    100% { color: rgb(55, 206, 206); }
+    0% {
+        color: black;
+    }
+
+    100% {
+        color: rgb(55, 206, 206);
+    }
 }
 
 #descuento {
@@ -495,7 +512,7 @@ width: 85%;
     display: flex;
     justify-content: center;
     text-decoration: line-through;
-    font-size: medium;    
+    font-size: medium;
 }
 
 .contenedor-comprar {
@@ -507,13 +524,13 @@ width: 85%;
 
 .comprar {
     display: flex;
-    background-color: #3483FA;    
+    background-color: #3483FA;
     width: 125px;
     height: 40px;
     border: 5px solid #3483FA;
-    border-radius: 20px;    
+    border-radius: 20px;
     justify-content: center;
-    transition: all 1000ms;       
+    transition: all 1000ms;
 }
 
 .comprar:hover {
@@ -523,11 +540,11 @@ width: 85%;
 
 .comprar a {
     text-decoration: none;
-    font-size: 20px;   
+    font-size: 20px;
     color: white;
 }
 
-#camion {    
+#camion {
     margin: auto;
     margin-bottom: 15px;
     color: #3483FA;
@@ -536,11 +553,18 @@ width: 85%;
 }
 
 @keyframes camion {
-    0% { right: 30px; color: rgb(55, 206, 206); }
-    100% { right: 0px; color: #3483FA; }
+    0% {
+        right: 30px;
+        color: rgb(55, 206, 206);
+    }
+
+    100% {
+        right: 0px;
+        color: #3483FA;
+    }
 }
 
-#envio-gratis {         
+#envio-gratis {
     font-size: 14px;
     font-style: italic;
     width: 100%;
@@ -560,20 +584,19 @@ width: 85%;
     border-radius: 10px;
 }
 
-.seccion-acerca-producto
-{            
+.seccion-acerca-producto {
     margin-top: 25px;
-    padding: 15px;    
+    padding: 15px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
 }
 
 .seccion-acerca-producto h3 {
     font-size: 20px;
     width: 100%;
     height: 40px;
-    
+
 }
 
 .seccion-acerca-producto p {
@@ -590,7 +613,7 @@ width: 85%;
     margin-top: 30px;
 }
 
-.lista {    
+.lista {
     width: 100%;
     padding-left: 18px;
 }
@@ -611,7 +634,7 @@ main#product-cart {
 }
 
 #productBox article {
-    
+
     display: flex;
     border: 1px solid #dee2e6;
     margin-bottom: 20px;
@@ -642,17 +665,17 @@ main#product-cart {
 
 #productBox .borrar {
     display: flex;
-    background-color: #3483FA;    
+    background-color: #3483FA;
     width: 120px;
     height: 35px;
     border: 5px solid #3483FA;
-    border-radius: 20px;    
+    border-radius: 20px;
     justify-content: center;
-    align-items: center; 
-    margin-right: 1vw;     
+    align-items: center;
+    margin-right: 1vw;
     transition: all 1000ms;
     text-decoration: none;
-    font-size: 12px;   
+    font-size: 12px;
     color: white;
     cursor: pointer;
 }
@@ -678,25 +701,28 @@ main#product-cart {
     text-align: center;
     font-size: 20px;
 }
+
 .finalPrice h4 {
-    text-decoration: underline; 
-  }
-  .discount h3 {
+    text-decoration: underline;
+}
+
+.discount h3 {
     text-decoration: underline
-  }
+}
+
 #productPrice .enviar {
     display: flex;
-    background-color: #3483FA;    
+    background-color: #3483FA;
     width: 120px;
     height: 35px;
     border: 5px solid #3483FA;
-    border-radius: 20px;    
+    border-radius: 20px;
     justify-content: center;
-    align-items: center; 
-    margin-right: 1vw;     
+    align-items: center;
+    margin-right: 1vw;
     transition: all 1000ms;
     text-decoration: none;
-    font-size: 12px;   
+    font-size: 12px;
     color: white;
     cursor: pointer;
 }
@@ -713,13 +739,208 @@ main#product-cart {
 
 /* ------------------------------ Secciones del Login------------------------------ */
 
+body#login {
+    margin: auto;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    text-align: center;
+}
+
+.main-login {
+    margin: 0;
+    margin-top: 15vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-login h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilo para la caja de inicio de sesión */
+.formulario-login {
+    background-color: #363755;
+    border-radius: 10px;
+    /*borde redondeado*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /*sombra*/
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    /* Reduce el ancho en pantallas más pequeñas */
+}
+
+/* Estilo para los campos de entrada de texto */
+.input-campo {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.input-campo i {
+    color: #3483FA;
+    /* Verde para los iconos */
+    margin-right: 10px;
+}
+
+.input-campo input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #eee;
+    /* Gris para los campos de entrada */
+    color: #000;
+    /* Texto negro */
+}
+
+/* Estilo para el botón de enviar */
+.btn-enviar button {
+    background-color: #3483FA;
+    /* Verde para el botón */
+    color: #fff;
+    /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    /*cambia de puntero triangular a manito*/
+    margin-top: 10px;
+}
+
+/* Estilo para etiquetas de formulario (labels) */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilo para el enlace de texto de regreso */
+a {
+    text-decoration: none;
+    color: #3483FA;
+    /* Color del texto del enlace */
+    font-weight: bold;
+    font-size: large;
+}
+
+.main-login p {
+    margin-top: 1rem;
+}
 
 
 /* ------------------------------ Secciones del Register------------------------------ */
 
+/* Css para Main */
+#main-register {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 15vh;
+    margin-bottom: 40px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#main-register h1 {
+    margin-bottom: 5px;
+}
+
+form {
+    text-align: center;
+    }
+
+/* Estilos para los campos del formulario */
+#main-register section {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#main-register .form-text input, #provincia {
+    width: 80%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-text{
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #eae7de;
+    /* position: relative; */
+    /* left: 10px; */
+}
+
+.form-check{
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-around
+}
+
+#main-register .form-check2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 
+/* Estilo para Botones Registro, Login y iconos */
 
+.botonReg-log{
+    background-color: #3483FA;
+    color: white;
+    border: 5px solid #3483FA;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botonReg-log:hover {
+    background-color: rgb(55, 206, 206);
+    border: 5px solid white;
+    font-family: 'Lato', sans-serif;
+}
+
+.button-register {
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-auto{
+    text-align: center;
+    align-items: center;
+}
+
+.login-auto .icono {
+    color: #3483FA;
+    background-color: white;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.login-auto .icono:hover {
+    font-size: 1.2rem;
+    color: white;
+    background-color: #3483FA;
+    cursor: pointer;
+}
 
 
 
@@ -742,12 +963,12 @@ main#product-cart {
         height: 70%;
         width: 55%;
         display: flex;
-        justify-content: flex-end;    
+        justify-content: flex-end;
     }
 
-    .iconos-header {        
-       height: 70%;
-       width: 45%;
+    .iconos-header {
+        height: 70%;
+        width: 45%;
     }
 
     .iconos-header i {
@@ -755,27 +976,27 @@ main#product-cart {
     }
 
     .barra {
-       display: flex;
-    }   
+        display: flex;
+    }
 
     #menu {
         display: none;
     }
 
     #carrito {
-        display: block;        
+        display: block;
     }
-
+    
     .contenedor-boton {
-        display: block;       
+        display: block;
     }
 
     .escritorio {
         margin-bottom: 5%;
     }
-    
+
     /* main */
-    
+
     main#product-detail {
         max-width: 1000px;
         margin: auto;
@@ -793,7 +1014,7 @@ main#product-cart {
         font-size: 150%;
         margin-right: 1%;
     }
-    
+
 
     /* Estilo para Boton Whatsapp */
 
@@ -811,13 +1032,27 @@ main#product-cart {
 
     /* ------------------------------ Secciones del Index------------------------------ */
 
-   /*  .swiper {
+    .seccion-imagenes-index {
+        margin-top: 8vh;
+    }
+    
+    #monitor-imagen-index {
+        width: 65%;
+    }
+
+    .ofertas {        
+        margin-top: 2rem;      
+    }
+
+    /*  .swiper {
         padding: 0 70px;
     }
 
     .swiper-slide img {
         width: 100%;
     } */
+
+
 
 
     /* ------------------------------ Secciones del ProducDetail ------------------------------ */
@@ -846,24 +1081,24 @@ main#product-cart {
     .seccion-compra {
         padding-right: 15%;
     }
-       
-    /* Seccion Acerca del producto */   
+
+    /* Seccion Acerca del producto */
 
     .final {
         max-width: 950px;
         margin: auto;
     }
-    
+
 
     /* ------------------------------ Secciones del ProductCart------------------------------ */
-    
+
     main#product-cart {
         margin-top: 12%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     #productBox {
         width: 70%;
     }
@@ -876,8 +1111,22 @@ main#product-cart {
 
     /* ------------------------------ Secciones del Login------------------------------ */
 
+    .main-login h1 {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
 
+    .main-login p {
+        margin-bottom: 1rem;
+    }
 
-    /* ------------------------------ Secciones del Register------------------------------ */
     
+    
+    /* ------------------------------ Secciones del Register------------------------------ */
+
+    #main-register {      
+        margin-top: 20vh;
+        max-width: 550px;
+    }
+
 }
