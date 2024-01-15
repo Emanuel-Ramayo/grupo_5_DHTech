@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+    <!-- <link rel="stylesheet" href="./css/productDetail.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body id="body-crear-producto">
+    
+    <%- include('./partials/header') %>
+
+    <main id="main-crear-producto">
+        <h1>Editar producto</h1>
+
+        <form action="" method="POST" id="form-create-product">
+            <div>
+                <label for="">Producto:</label>
+                <input type="text" name="nombreProducto" id="" placeholder="Ingresa el nombre del Producto" value="ELEGIDO" required>
+            </div>
+            <div>
+                <label for="">Precio:</label>
+                <input type="number" name="precio" id="" placeholder="Ingresa el precio del Producto" value="ELEGIDO" required>
+            </div>
+        
+            <div>
+                <label for="">Categoría:</label>
+                <select name="tipoProducto" id="" required>
+                    <option value="ELEGIDO" selected></option>
+                    <option value="scr">Monitores</option>
+                    <option value="gpu">Placas de Video</option>
+                    <option value="cpu">Procesadores</option>
+                    <option value="str">Almacenamiento</option>
+                    <option value="psu">Fuentes</option>
+                    <option value="case">Gabinetes</option>
+                    <option value="pcs">Periféricos</option>
+                </select>
+            </div>
+            <div class="pc-radio">
+                <label for="si-stock"><input type="radio" name="stock" id="si-stock" required>En Stock</label>
+                <label for="no-stock"><input type="radio" name="stock" id="no-stock">Sin Stock</label>
+            </div>
+            <div>
+                <label for="">Descripción del producto:</label>
+                <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Escribe aquí..." required></textarea>
+            </div>
+            <div id="pc-subir">
+                <label for="">Subir imágenes:</label>
+                <input type="file" name="subir-imagenes" id="" accept=".jpg, .png" multiple required>
+            </div>
+            
+            <div id="pc-syr">                
+                <button type="submit">Actualizar</button>
+            </div>
+        </form>
+    </main>
+
+
+    <%- include('./partials/footer') %>
+
+    <%- include('./partials/wsp') %>
+</body>
+</html>

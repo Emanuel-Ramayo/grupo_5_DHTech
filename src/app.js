@@ -20,6 +20,8 @@ const rutaProductDetail = require('./routers/productDetailRouter.js');
 const rutaProductCart = require('./routers/productCartRouter.js');
 const rutaRegister = require('./routers/registerRouter.js');
 const rutaLogin = require('./routers/loginRouter.js');
+const rutaProductCreation = require('./routers/productCreationRouter.js');
+const rutaProductEdit = require('./routers/productEditRouter.js');
 const { log } = require('node:console');
 
 
@@ -33,3 +35,6 @@ app.use('/productDetail', rutaProductDetail);
 app.use('/register', rutaRegister);
 
 app.use('/login', rutaLogin);
+
+app.use('/productCreation', rutaProductCreation);
+app.use('/productEdit', rutaProductEdit);

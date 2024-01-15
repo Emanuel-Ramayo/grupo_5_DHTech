@@ -3,140 +3,144 @@
 
 <head>
     <%- include('./partials/head') %>
-    <!-- <link rel="stylesheet" href="./css/productDetail.css"> -->
-    <link rel="stylesheet" href="./css/styles.css">
+        <title>Detalle del producto</title>
+        <!-- <link rel="stylesheet" href="./css/productDetail.css"> -->
+        <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body id="product-detail">   
+<body id="product-detail">
     <%- include('./partials/header') %>
-    
-    <main id="product-detail">
-        <section class="seccion-imagenes">
-            <br>
-            <br>
-            <br>
-            <img id="monitor-imagen-1" src="./images/monitor.png" alt="Foto frontal del monitor">
-            
-            <div class="selector-imagenes">      
-                <i id="circulos-fotos" class="fa-solid fa-circle"></i>
-                <i id="circulos-fotos" class="fa-regular fa-circle"></i>
-                <i id="circulos-fotos" class="fa-regular fa-circle"></i>
-            </div>
 
-            <h2 id="nombre-producto">MONITOR 27 GIGABYTE VA 165HZ</h2>
-        </section>
-        
+        <main id="product-detail">
+            <section class="seccion-imagenes">
+                <br>
+                <br>
+                <br>
+                <img id="monitor-imagen-1" src="./images/monitor.png" alt="Foto frontal del monitor">
+
+                <div class="selector-imagenes">
+                    <i id="circulos-fotos" class="fa-solid fa-circle"></i>
+                    <i id="circulos-fotos" class="fa-regular fa-circle"></i>
+                    <i id="circulos-fotos" class="fa-regular fa-circle"></i>
+                </div>
+
+                <h2 id="nombre-producto">MONITOR 27 GIGABYTE VA 165HZ</h2>
+            </section>
 
 
-        <section class="seccion-producto">
-            
-            <section class="seccion-pagos">
 
-                <h3 id="seleccion-titulo">Selecciona tu método de pago:</h3>
+            <section class="seccion-producto">
 
-                <section class="metodos-pago">
+                <section class="seccion-pagos">
 
-                    <div class="pago1">
-                        <h3 id="debito">Pagá con debito o transferencia</h3>
-                        
-                        <i id="circulos-pago" class="fa-solid fa-circle"></i>
+                    <h3 id="seleccion-titulo">Selecciona tu método de pago:</h3>
+
+                    <section class="metodos-pago">
+
+                        <div class="pago1">
+                            <h3 id="debito">Pagá con debito o transferencia</h3>
+
+                            <i id="circulos-pago" class="fa-solid fa-circle"></i>
+                        </div>
+
+                        <div class="pago2">
+                            <h3 id="mercadopago">Pagá con MercadoPago</h3>
+
+                            <i id="circulos-pago" class="fa-regular fa-circle"></i>
+                        </div>
+
+                        <div class="pago3">
+                            <h3 id="tarjeta">Pagá con tarjeta</h3>
+
+                            <i id="circulos-pago" class="fa-regular fa-circle"></i>
+                        </div>
+                    </section>
+
+                </section>
+
+
+                <section class="seccion-compra">
+
+                    <div class="precios">
+                        <h4>Precio Especial!</h4>
+                        <h3 id="descuento">$400.000,00</h3>
+                        <h3 id="precio-original">$430.000,00</h3>
                     </div>
-                    
-                    <div class="pago2">
-                        <h3 id="mercadopago">Pagá con MercadoPago</h3>
-                        
-                        <i id="circulos-pago" class="fa-regular fa-circle"></i>
+
+                    <div class="contenedor-comprar">
+                        <div class="comprar">
+                            <a href="#">Comprar</a>
+                        </div>
                     </div>
-                    
-                    <div class="pago3">
-                        <h3 id="tarjeta">Pagá con tarjeta</h3>
-                        
-                        <i id="circulos-pago" class="fa-regular fa-circle"></i>
+
+                    <h4 id="envio-gratis">Envio gratis</h4>
+
+                    <div id="camion">
+                        <i class="fa-solid fa-truck-fast"></i>
                     </div>
-                </section> 
+
+                </section>
 
             </section>
-            
-            
-            <section class="seccion-compra">
-                
-                <div class="precios">
-                    <h4>Precio Especial!</h4>
-                    <h3 id="descuento">$400.000,00</h3>
-                    <h3 id="precio-original">$430.000,00</h3>
+
+        </main>
+
+        <div class="final">
+            <section class="seccion-acerca-producto">
+
+                <h3>Acerca del Producto</h3>
+
+                <p>A menudo se subestima al monitor. La verdad es que los monitores forman un efecto sinérgico y ofrecen
+                    el mejor rendimiento de los componentes de la PC.
+                    Los monitores para juegos de GIGABYTE ofrecen las mejores especificaciones y calidad, los usuarios
+                    realmente pueden disfrutar de un rendimiento de primer nivel
+                    sin necesidad de extravagancias.</p>
+
+                <h4>Caracteristicas:</h4>
+
+                <div class="lista">
+
+                    <ul>
+                        <li>Modelo: GIGABYTE G27FC-SA</li>
+                        <br>
+                        <li>Tamaño del panel (diagonal): 27" VA 1500R</li>
+                        <br>
+                        <li>Resolución verdadera: 1920 x 1080 (FHD)</li>
+                        <br>
+                        <li>Colores de pantalla: 8 bits</li>
+                        <br>
+                        <li>Ángulo de visión 178 ° (H) / 178 ° (V)</li>
+                        <br>
+                        <li>Tiempo de respuesta: 1 ms (MPRT)</li>
+                        <br>
+                        <li>Frecuencia de actualización: 165 Hz</li>
+                        <br>
+                        <li>Entrada de señal: HDMI 1.4 x2, Display Port 1.2 x1</li>
+                        <br>
+                        <li>Enchufe de audífonos: si</li>
+                        <br>
+                        <li>Puerto (s) USB: USB 3.0 x2</li>
+                        <br>
+                        <li>El consumo de energía :55W (máximo)</li>
+                        <br>
+                        <li>Ajuste de altura (mm): 1 de 30 mm</li>
+                        <br>
+                        <li>Montaje en pared VESA (mm:) 100 * 100 mm</li>
+                        <br>
+                        <li>Dimensión con soporte (WxHxD): 610,3 * 531 * 203</li>
+                        <br>
+                        <li>Dimensión sin soporte (WxHxD): 610,3 * 367,4 * 84,5</li>
+                    </ul>
+
                 </div>
-                
-                <div class="contenedor-comprar">
-                    <div class="comprar">
-                        <a href="#">Comprar</a>
-                    </div>
-                </div>
-                
-                <h4 id="envio-gratis">Envio gratis</h4>
 
-                <div id="camion">
-                    <i class="fa-solid fa-truck-fast"></i>
-                </div>
-                    
-            </section>         
-        
-        </section>
+            </section>
+        </div>
 
-    </main>
+        <%- include('./partials/footer') %>
 
-<div class="final">
-    <section class="seccion-acerca-producto">
+        <%- include('./partials/wsp') %>
 
-        <h3>Acerca del Producto</h3>            
-            
-        <p>A menudo se subestima al monitor. La verdad es que los monitores forman un efecto sinérgico y ofrecen el mejor rendimiento de los componentes de la PC.
-                Los monitores para juegos de GIGABYTE ofrecen las mejores especificaciones y calidad, los usuarios realmente pueden disfrutar de un rendimiento de primer nivel
-                sin necesidad de extravagancias.</p>
-                
-        <h4>Caracteristicas:</h4>
-                
-        <div class="lista">
+</body>
 
-            <ul>
-                <li>Modelo: GIGABYTE G27FC-SA</li>
-                <br>
-                <li>Tamaño del panel (diagonal): 27" VA 1500R</li>
-                <br>   
-                <li>Resolución verdadera: 1920 x 1080 (FHD)</li>
-                <br>
-                <li>Colores de pantalla: 8 bits</li>
-                <br>
-                <li>Ángulo de visión 178 ° (H) / 178 ° (V)</li>
-                <br>
-                <li>Tiempo de respuesta: 1 ms (MPRT)</li>
-                <br>
-                <li>Frecuencia de actualización: 165 Hz</li>
-                <br>
-                <li>Entrada de señal: HDMI 1.4 x2, Display Port 1.2 x1</li>
-                <br>
-                <li>Enchufe de audífonos: si</li>
-                <br>
-                <li>Puerto (s) USB: USB 3.0 x2</li>
-                <br>
-                <li>El consumo de energía :55W (máximo)</li>
-                <br>
-                <li>Ajuste de altura (mm): 1 de 30 mm</li>
-                <br>
-                <li>Montaje en pared VESA (mm:) 100 * 100 mm</li>
-                <br>
-                <li>Dimensión con soporte (WxHxD): 610,3 * 531 * 203</li>
-                <br>
-                <li>Dimensión sin soporte (WxHxD): 610,3 * 367,4 * 84,5</li>
-            </ul>
-            
-        </div>                
-            
-    </section>  
-</div>  
-
-<%- include('./partials/footer') %>
-
-<%- include('./partials/wsp') %>
-
-    </body>
-    </html>
+</html>
