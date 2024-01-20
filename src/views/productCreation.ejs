@@ -3,7 +3,7 @@
 <head>
     <%- include('./partials/head') %>
     <!-- <link rel="stylesheet" href="./css/productDetail.css"> -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body id="body-crear-producto">
@@ -13,7 +13,7 @@
     <main id="main-crear-producto">
         <h1>Creación de productos</h1>
 
-        <form action="" method="POST" id="form-create-product">
+        <form action="" method="POST" id="form-create-product" enctype="multipart/form-data">
             <div>
                 <label for="">Producto:</label>
                 <input type="text" name="nombreProducto" id="" placeholder="Ingresa el nombre del Producto" required>
