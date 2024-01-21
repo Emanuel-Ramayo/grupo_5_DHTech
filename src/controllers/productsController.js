@@ -1,18 +1,20 @@
+const products = require('../models/data/products.json');
+
 const controller = {
     mostrarProducts : (req, res) => {
-        return res.render('products.ejs')
+        return res.render('products.ejs', {products})
     },
 
     crearProducts : (req, res) => {
-        return res.render('productCreation.ejs')
+        return res.render('productCreation.ejs');
     },
 
     editarProducts : (req, res) => {
-        return res.render('productEdit.ejs')
+        return res.render('productEdit.ejs');
     },
 
     detalleProducts : (req, res) => {
-        return res.render('productDetail.ejs')
+        return res.render('productDetail.ejs');
     },
 
 };

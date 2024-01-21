@@ -11,7 +11,22 @@
 
     <main id="products-main">
 
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequuntur laborum modi unde odit libero, reiciendis quae accusantium cupiditate cumque animi quibusdam in atque dolorum veritatis alias velit illo enim.</h1>
+        <h1>Lista de productos:</h1>
+
+        <div id="Agregar-Producto">
+            <a href="/products/create">Agregar un Producto</a>
+        </div>
+
+        <section>
+            <% for (i = 0; i < products.length; i++){ %>
+                <article>
+
+                    <img src="<%= products[i].imagenes %>" alt="">  
+                    <h2><%= products[i].nombre %></h2>
+                                  
+                </article>
+                <% } %>
+        </section>
 
     </main>
 

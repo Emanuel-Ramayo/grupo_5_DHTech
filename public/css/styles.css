@@ -1031,7 +1031,7 @@ div textarea {
 /* ------------------------------ Secciones de Productos------------------------------ */
 
 #products-main {
-    max-width: 400px;
+    width: 90%;
     margin: auto;
     padding: 20px;
     background-color: rgb(240, 240, 240);
@@ -1039,12 +1039,46 @@ div textarea {
     border-radius: 5px;
     margin-top: 15vh;
     margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;   
 }
 
+#products-main #Agregar-Producto {
+    margin: 0 2%;
+    text-align: end;
+}
 
+#products-main h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#products-main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#products-main article {
+    width: 100%;
+    margin: 2%;
+    padding: 2%;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#products-main article h2 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#products-main article img {
+    max-width: 100%;
+    margin-top: auto;
+}
 
 
 /* ==================================================== Media Queries ==================================================== */
@@ -1243,4 +1277,23 @@ div textarea {
     #form-create-product {
         width: 80%;
     }
+
+
+    /* ------------------------------ Secciones de Productos------------------------------ */
+    
+    #products-main {
+        width: 50%;
+        margin-top: 17vh;      
+    }
+
+
+    #products-main article {
+        width: 48%;
+        margin: 1%;
+    }
+
+    #products-main article h2 {
+        font-size: 1.5rem;
+    }
+
 }
