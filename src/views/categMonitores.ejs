@@ -16,18 +16,22 @@
         <div id="Agregar-Producto">
             <a href="/products/create">Agregar un Producto</a>
         </div>
-
+       
         <section>
-            <% for (i = 0; i < products.length; i++){ %>
-                <article>
-
-                    <a href="/products/<%= products[i].id %>">
-                        <img src="<%= products[i].imagenes %>" alt="">
-                        <h2><%= products[i].nombre %></h2>
-                    </a>
-                                  
-                </article>
-                <% } %>
+            <% for (i=0; i < products.length; i++){ %>
+        
+                <% if (products[i].categoria=="Monitores" ){ %>
+                    <article>
+                        <a href="/products/<%= products[i].id %>">
+                            <img src="<%= products[i].imagenes %>" alt="">
+                            <h2>
+                                <%= products[i].nombre %>
+                            </h2>
+                        </a>
+                    </article>
+                    <% } %>
+        
+            <% } %>
         </section>
 
     </main>

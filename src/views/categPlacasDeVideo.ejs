@@ -18,16 +18,20 @@
         </div>
 
         <section>
-            <% for (i = 0; i < products.length; i++){ %>
-                <article>
-
-                    <a href="/products/<%= products[i].id %>">
-                        <img src="<%= products[i].imagenes %>" alt="">
-                        <h2><%= products[i].nombre %></h2>
-                    </a>
-                                  
-                </article>
-                <% } %>
+            <% for (i=0; i < products.length; i++){ %>
+        
+                <% if (products[i].categoria=="Placas de Video" ){ %>
+                    <article>
+                        <a href="/products/<%= products[i].id %>">
+                            <img src="<%= products[i].imagenes %>" alt="">
+                            <h2>
+                                <%= products[i].nombre %>
+                            </h2>
+                        </a>
+                    </article>
+                    <% } %>
+        
+            <% } %>
         </section>
 
     </main>

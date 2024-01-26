@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <%- include('/partials/head.ejs')%>
+    <%- include('./partials/head') %>
+        <title>Detalle del producto</title>
+        <!-- <link rel="stylesheet" href="./css/productDetail.css"> -->
+        <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <%- include('/partials/header.ejs')%>
-    <h1>Quiénes somos</h1>
-    <p>Somos un grupo de estudiantes catamarqueños del curso de Programación Web Full Stack de Digital House y este es nuestro proyecto final de dicho curso.</p>
-    <h2>Nuestro Mercado</h2>
-    <p>Nuestro marketplace se especializa en ofrecer una amplia gama de componentes de computadoras, incluyendo hardware, accesorios y periféricos.</p>
+    <%- include('./partials/header') %>
+
+    <main id="main-nosotros">
+        <h1>Quiénes somos</h1>
+        <p>Somos un grupo de estudiantes catamarqueños del curso de Programación Web Full Stack de Digital House y este es nuestro proyecto final de dicho curso.</p>
+        <h2>Nuestro Mercado</h2>
+        <p>Nuestro marketplace se especializa en ofrecer una amplia gama de componentes de computadoras, incluyendo hardware, accesorios y periféricos.</p>
+    </main>
     
-    <%- include('/partials/footer.ejs')%>
+    <%- include('./partials/footer') %>
+
+    <%- include('./partials/wsp') %>
 </body>
 </html>

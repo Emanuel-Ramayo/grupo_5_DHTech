@@ -46,7 +46,7 @@
         <br>
         <br>
         <div class="carrusel-index">
-            <a href="/products/detail">
+            <a href="/products/<%= products[0].id %>">
             <img id="monitor-imagen-index" src="./images/monitor-g.jpg" alt="Foto frontal del monitor"></a>
             
             <div class="selector-imagenes">
@@ -64,44 +64,50 @@
         <h2 class="titulos">Ofertas</h2>
         <article class="oferta">
             <div class="oferta-img-container">
-                <img src="./images/cpu.jpg" alt="Cpu">
+                <img src="<%= products[13].imagenes %>" alt="Cpu">
             </div>
             <div class="oferta-descripcion">
-                <h3 class="oferta-producto">AMD Ryzen 5 5600</h3>
+                <h3 class="oferta-producto"><%= products[13].nombre %></h3>
             </div>
             <div class="oferta-precios">
-                <h3 class="oferta-precio">$ 155.000</h3>
-                <h4 class="oferta-precio-antiguo">$ 175.000</h4>
+                <h3 class="oferta-precio"><%= products[13].precio * 0.75 %></h3>
+                <h4 class="oferta-precio-antiguo"><%= products[13].precio %></h4>
 
-                <div class="btn-comprar">Comprar</div>
+                <a href="/products/<%= products[13].id %>">
+                    <div class="btn-comprar">Comprar</div>
+                </a>
             </div>
         </article>
         <article class="oferta">
             <div class="oferta-img-container">
-                <img src="./images/monitor4.png" alt="Cpu">
+                <img src="<%= products[12].imagenes %>" alt="Cpu">
             </div>
             <div class="oferta-descripcion">
-                <h3 class="oferta-producto">Monitor Gigabyte</h3>
+                <h3 class="oferta-producto"><%= products[12].nombre %></h3>
             </div>
             <div class="oferta-precios">
-                <h3 class="oferta-precio">$ 100.000</h3>
-                <h4 class="oferta-precio-antiguo">$ 125.000</h4>
+                <h3 class="oferta-precio"><%= products[12].precio * 0.70 %></h3>
+                <h4 class="oferta-precio-antiguo"><%= products[12].precio %></h4>
 
-                <div class="btn-comprar">Comprar</div>
+                <a href="/products/<%= products[12].id %>">
+                    <div class="btn-comprar">Comprar</div>
+                </a>
             </div>
         </article>
         <article class="oferta">
             <div class="oferta-img-container">
-                <img src="./images/placaDeVideo.png" alt="Cpu">
+                <img src="<%= products[10].imagenes %>" alt="Cpu">
             </div>
             <div class="oferta-descripcion">
-                <h3 class="oferta-producto">Gigabyte RTX 3060</h3>
+                <h3 class="oferta-producto"><%= products[10].nombre %></h3>
             </div>
             <div class="oferta-precios">
-                <h3 class="oferta-precio">$ 280.000</h3>
-                <h4 class="oferta-precio-antiguo">$ 319.000</h4>
+                <h3 class="oferta-precio"><%= products[10].precio * 0.70 %></h3>
+                <h4 class="oferta-precio-antiguo"><%= products[10].precio %></h4>
 
-                <div class="btn-comprar">Comprar</div>
+                <a href="/products/<%= products[10].id %>">
+                    <div class="btn-comprar">Comprar</div>
+                </a>
             </div>
         </article>
     </section>

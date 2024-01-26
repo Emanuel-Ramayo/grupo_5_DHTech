@@ -29,6 +29,7 @@ header {
     position: fixed;
     top: 0;
     border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 0px 38px 4px rgba(0, 0, 0, 0.15);
 }
 
 .logo-titulo {
@@ -52,7 +53,7 @@ header {
 
 
 .iconos-header {
-    background-color: #eae7de;
+    background-color: transparent;
     width: 50%;
     height: 100%;
     display: flex;
@@ -62,11 +63,11 @@ header {
 
 .iconos-header i {
     font-size: 30px;
-    background-color: #eae7de;
+    background-color: transparent;
     margin-right: 2vw;
     cursor: pointer;
     color: #3483FA;
-    transition: all 1000ms;
+    transition: all 1000ms;    
 }
 
 .iconos-header i:hover {
@@ -91,7 +92,8 @@ header {
     background-color: #3483FA;
     width: 120px;
     height: 35px;
-    border: 5px solid #3483FA;
+    border: 2px solid #3483FA;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -101,7 +103,7 @@ header {
 
 .escritorio:hover {
     background-color: rgb(55, 206, 206);
-    border: 5px solid white;
+    border: 6px solid white;
 }
 
 .escritorio a {
@@ -126,7 +128,9 @@ footer {
     background-color: #eae7de;
     padding: 20px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 30px;
+    border-top: 1px solid rgb(204, 203, 203);
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.15);
 }
 
 footer p {
@@ -326,17 +330,47 @@ body#index {
     border: 5px solid white;
 }
 
+/* ---- ---- ---- nosotros - dudas - medios de pago ---- ---- ---- */
+
+#main-nosotros, #main-dudas, #main-medios-de-pago {
+    margin-top: 20vh;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main-nosotros p, #main-nosotros h1, #main-nosotros h2 {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#main-dudas p, #main-dudas h1, #main-dudas h2 {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#main-medios-de-pago p, #main-medios-de-pago h1, #main-medios-de-pago h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
 
 
 /* ------------------------------ Secciones del ProducDetail ------------------------------ */
 
 /* seccion-imagenes */
 
-#monitor-imagen-1 {
+#producto-imagen-1 {
     display: flex;
-    width: 80%;
+    max-width: 100%;
+    height: 70vh;
     margin: auto;
-    
+    margin-top: 7rem;
 }
 
 .selector-imagenes {
@@ -369,11 +403,14 @@ body#index {
     width: 95%;
     height: 250px;
     margin: auto;
-    padding: 15px;
+    padding: 1rem;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border-right: 1px solid rgb(204, 203, 203);
+    border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
 }
 
 #nombre-producto {
@@ -387,12 +424,14 @@ body#index {
 .seccion-pagos {
     background-color: #eae7de;
     width: 55%;
-    height: 230px;
+    height: 100px;
+    margin-top: 1rem;
 }
 
 #seleccion-titulo {
     font-size: 18px;
     height: 35px;
+    width: 20rem;
     font-style: italic;
     text-decoration: underline;
 }
@@ -418,7 +457,7 @@ body#index {
 }
 
 .pago1 h3 {
-    width: 85%;
+    width: 75%;
 }
 
 .pago2 {
@@ -431,7 +470,7 @@ body#index {
 }
 
 .pago2 h3 {
-    width: 85%;
+    width: 75%;
 }
 
 .pago3 {
@@ -444,11 +483,12 @@ body#index {
 }
 
 .pago3 h3 {
-    width: 85%;
+    width: 75%;
 }
 
 #circulos-pago {
     margin-top: 5px;
+    margin-right: 35px;
     display: flex;
     align-content: flex-start;
     cursor: pointer;
@@ -529,6 +569,7 @@ body#index {
     width: 125px;
     height: 40px;
     border: 5px solid #3483FA;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     justify-content: center;
     transition: all 1000ms;
@@ -580,31 +621,38 @@ body#index {
 .final {
     background-color: #eae7de;
     width: 95%;
-    height: 745px;
+    height: auto;
     margin: auto;
     border-radius: 10px;
+    border-right: 1px solid rgb(204, 203, 203);
+    border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
 }
 
 .seccion-acerca-producto {
     margin-top: 25px;
-    padding: 15px;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
 
 .seccion-acerca-producto h3 {
-    font-size: 20px;
+    font-size: 22px;
     width: 100%;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 
 }
 
 .seccion-acerca-producto p {
     font-size: 15px;
     font-style: italic;
-    width: 100%;
-    height: 135px;
+    width: 95%;
+    margin: auto;
+    line-height: 2;
 }
 
 .seccion-acerca-producto ul {
@@ -940,7 +988,7 @@ label {
 .login-auto .icono:hover {
     font-size: 1.2rem;
     color: white;
-    background-color: #3483FA;
+    background-color: rgb(55, 206, 206);
     cursor: pointer;
 }
 
@@ -1034,7 +1082,7 @@ div textarea {
     width: 90%;
     margin: auto;
     padding: 20px;
-    background-color: rgb(240, 240, 240);
+    background-color: #eae7de;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-top: 15vh;
@@ -1077,7 +1125,9 @@ div textarea {
 
 #products-main article img {
     max-width: 100%;
-    margin-top: auto;
+    height: 35vh;
+    display: flex;
+    margin: auto;
 }
 
 
