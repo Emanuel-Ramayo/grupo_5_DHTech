@@ -21,6 +21,16 @@
             <% for (i = 0; i < products.length; i++){ %>
                 <article>
 
+                    <div class="stock-detail-products">
+
+                        <% if (products[i].stock == true){ %>
+                            <h2 id="stock-true">EN STOCK</h2>
+                        <% } else { %>                        
+                            <h2 id="stock-false">SIN STOCK</h2>
+                        <% } %>   
+                                               
+                    </div>
+
                     <a href="/products/<%= products[i].id %>">
                         <img src="<%= products[i].imagenes %>" alt="">
                         <h2><%= products[i].nombre %></h2>

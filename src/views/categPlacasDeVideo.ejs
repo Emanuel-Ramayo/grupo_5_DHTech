@@ -22,6 +22,16 @@
         
                 <% if (products[i].categoria=="Placas de Video" ){ %>
                     <article>
+                        <div class="stock-detail-products">
+
+                            <% if (products[i].stock == true){ %>
+                                <h2 id="stock-true">EN STOCK</h2>
+                            <% } else { %>                        
+                                <h2 id="stock-false">SIN STOCK</h2>
+                            <% } %>   
+                                                   
+                        </div>
+
                         <a href="/products/<%= products[i].id %>">
                             <img src="<%= products[i].imagenes %>" alt="">
                             <h2>

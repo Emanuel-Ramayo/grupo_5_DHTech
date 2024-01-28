@@ -533,11 +533,12 @@ body#index {
 }
 
 .precios {
-    width: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: 0;
 }
 
 .precios h4 {
@@ -578,11 +579,28 @@ body#index {
     font-size: medium;
 }
 
+.stock-detail {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 0.6rem;
+    margin-top: 1rem;       
+}
+
+#stock-true {
+    background-color: #04eca7;
+    padding: 0.3rem;
+}
+
+#stock-false {
+    background-color: #e40000;
+    padding: 0.3rem;
+}
+
 .contenedor-comprar {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 0.5rem;
 }
 
 .comprar {
@@ -675,6 +693,7 @@ body#index {
     width: 95%;
     margin: auto;
     line-height: 2;
+    text-align: center;
 }
 
 .seccion-acerca-producto ul {
@@ -1168,6 +1187,25 @@ div textarea {
     border-right: 1px solid rgb(204, 203, 203);
     border-bottom: 1px solid rgb(204, 203, 203);
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
+}
+
+.stock-detail-products {
+    margin-left: auto;
+    color: rgb(255, 255, 255);     
+}
+
+.stock-detail-products #stock-true {
+    background-color: #04eca7;
+    padding: 0.3rem;
+    font-size: 1rem;
+    margin-top: 1.2rem;
+}
+
+.stock-detail-products #stock-false {
+    background-color: #e40000;
+    padding: 0.3rem;
+    font-size: 1rem;
+    margin-top: 1.2rem;
 }
 
 #products-main article h2 {

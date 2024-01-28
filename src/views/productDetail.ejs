@@ -24,7 +24,8 @@
                     <i id="circulos-fotos" class="fa-regular fa-circle"></i>
                 </div>
 
-                <h2 id="nombre-producto"><%= producto.nombre %></h2>
+                <h2 id="nombre-producto"><%= producto.nombre %> </h2>
+               
             </section>
 
 
@@ -63,14 +64,26 @@
 
                     <div class="precios">
                         <h4>Precio Especial!</h4>
-                        <h3 id="descuento"><%= (producto.precio * 0.75).toFixed(2) %></h3>
+                        <h3 id="descuento"><%= (producto.precio * 0.75).toFixed(2) %></h3>                    
+                        
                         <h3 id="precio-original"><%= producto.precio %></h3>
                     </div>
 
+                   
                     <div class="contenedor-comprar">
                         <div class="comprar">
                             <a href="#">Comprar</a>
                         </div>
+                    </div>
+
+                    <div class="stock-detail">
+
+                        <% if (producto.stock == true){ %>
+                            <h2 id="stock-true">EN STOCK</h2>
+                        <% } else { %>                        
+                            <h2 id="stock-false">SIN STOCK</h2>
+                        <% } %>   
+                                               
                     </div>
 
                     <h4 id="envio-gratis">Envio gratis</h4>
