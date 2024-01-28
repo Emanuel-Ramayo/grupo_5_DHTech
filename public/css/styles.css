@@ -260,6 +260,7 @@ body#index {
 
 .ofertas {
     /* margin-top: 2rem; */
+    margin: auto;
     margin-top: 1.5rem;
     margin-bottom: 0px;
     display: flex;
@@ -268,23 +269,32 @@ body#index {
     align-items: center;
     width: 100%;
     gap: 1rem;
-    
+    background-color: #eae7de;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid rgb(204, 203, 203);
+    border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
 }
 
 .oferta {
     max-width: 550px;
     width: 100%;
-    height: 150px;
+    height: 190px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: .5rem;
-    border: 1px solid #7889dc;
+    border: 1px solid rgb(204, 203, 203);
     padding: .3rem;
-    border-radius: .3rem;
+    border-radius: .8rem;
     border-right: 1px solid rgb(204, 203, 203);
     border-bottom: 1px solid rgb(204, 203, 203);
     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    margin-bottom: 0.8rem;
 }
 
 .oferta-img-container {
@@ -313,11 +323,13 @@ body#index {
 
 .oferta-precios {
     width: 150px;
+    text-align: center;
 }
 
 .oferta-precio {
     font-size: 1.2rem;
     color: #3483FA;;
+    margin-top: 1rem;
 }
 
 .oferta-precio-antiguo {
@@ -328,6 +340,7 @@ body#index {
 
 .btn-comprar {
     margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: .5rem .3rem;
     text-align: center;
     border-radius: 20px;
@@ -1358,7 +1371,11 @@ div textarea {
     }
 
     .ofertas {        
-        margin-top: 2rem;      
+        margin-top: 2rem;
+        width: 35%; 
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 1rem;
     }
 
     
