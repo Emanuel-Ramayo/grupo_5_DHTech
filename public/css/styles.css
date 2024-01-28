@@ -29,7 +29,7 @@ header {
     position: fixed;
     top: 0;
     border-bottom: 1px solid rgb(204, 203, 203);
-    box-shadow: 0px 38px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.15);
 }
 
 .logo-titulo {
@@ -48,7 +48,7 @@ header {
 }
 
 #logo {
-    height: 100%;
+    height: 4.5rem;
 }
 
 
@@ -76,40 +76,48 @@ header {
 }
 
 .barra {
-    background-color: #eae7de;
-    width: 100%;
-    height: 30%;
+    position: absolute;
+    align-items: end;
+    top: 0rem;
+    right: 0;
+    bottom: 0;
+    background-color: #3483FA;
+    padding: 2rem;
+    width: 40%;
+    height: 50rem;
+    border-left: 2px solid #3483FA;
     display: none;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 2%;
-    border-bottom: 2px solid rgb(204, 203, 203);
+}
+
+#cerrar-header i {
+    display: flex;
+    color: white;
+    font: 55px;
+    margin-left: 98%;
+    margin-bottom: 1.5rem;
 }
 
 .escritorio {
-    display: flex;
     background-color: #3483FA;
-    width: 120px;
-    height: 35px;
-    border: 2px solid #3483FA;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-right: 1vw;
-    transition: all 1000ms;
-}
-
-.escritorio:hover {
-    background-color: rgb(55, 206, 206);
-    border: 6px solid white;
+    margin-bottom: 3rem;
+    border: 0;
+    box-shadow: 0;
+    border-radius: 0;
 }
 
 .escritorio a {
     text-decoration: none;
     font-size: 12px;
     color: white;
+
+    font-size: 1rem;
+}
+
+.escritorio a:hover {
+    color: cyan;
 }
 
 #carrito {
@@ -187,6 +195,7 @@ footer p {
 body#index {
     background-color: white;
     min-height: 50vh;
+    margin-top: 2rem;
 }
 
 .seccion-imagenes-index {
@@ -259,6 +268,7 @@ body#index {
     align-items: center;
     width: 100%;
     gap: 1rem;
+    
 }
 
 .oferta {
@@ -272,6 +282,9 @@ body#index {
     border: 1px solid #7889dc;
     padding: .3rem;
     border-radius: .3rem;
+    border-right: 1px solid rgb(204, 203, 203);
+    border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
 }
 
 .oferta-img-container {
@@ -333,23 +346,32 @@ body#index {
 /* ---- ---- ---- nosotros - dudas - medios de pago ---- ---- ---- */
 
 #main-nosotros, #main-dudas, #main-medios-de-pago {
-    margin-top: 20vh;
+    margin-top: 15vh;
     margin-bottom: 8%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
 }
 
 #main-nosotros p, #main-nosotros h1, #main-nosotros h2 {
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 #main-dudas p, #main-dudas h1, #main-dudas h2 {
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    text-align: center;
+}
+
+#main-dudas h2, #main-medios-de-pago h2, #main-nosotros h2 {
+    color: #3483FA;
 }
 
 #main-medios-de-pago p, #main-medios-de-pago h1, #main-medios-de-pago h2 {
@@ -368,9 +390,9 @@ body#index {
 #producto-imagen-1 {
     display: flex;
     max-width: 100%;
-    height: 70vh;
+    height: 50vh;
     margin: auto;
-    margin-top: 7rem;
+    margin-top: 2rem;
 }
 
 .selector-imagenes {
@@ -526,7 +548,7 @@ body#index {
     justify-content: center;
     align-items: flex-end;
     margin-top: 15px;
-    animation: letras 8s infinite;
+    animation: letras 3s infinite;
 }
 
 @keyframes letras {
@@ -689,11 +711,18 @@ main#product-cart {
     margin-bottom: 20px;
     background-color: #eae7de;
     border-radius: 10px;
+    border-right: 1px solid rgb(204, 203, 203);
+    border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
 }
+
 
 #productBox .imagen {
     width: 200px;
     margin: 10px;
+    border-right: 1px solid rgb(204, 203, 203);
+    border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
 }
 
 #productBox .contenido {
@@ -727,6 +756,8 @@ main#product-cart {
     font-size: 12px;
     color: white;
     cursor: pointer;
+    border: 5px solid #3483FA;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 #productBox .borrar:hover {
@@ -749,6 +780,9 @@ main#product-cart {
     border-radius: 10px;
     text-align: center;
     font-size: 20px;
+    border-right: 1px solid rgb(204, 203, 203);
+    border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
 }
 
 .finalPrice h4 {
@@ -774,6 +808,8 @@ main#product-cart {
     font-size: 12px;
     color: white;
     cursor: pointer;
+    border: 5px solid #3483FA;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 #productPrice .enviar:hover {
@@ -824,6 +860,9 @@ body#login {
     max-width: 400px;
     width: 90%;
     /* Reduce el ancho en pantallas más pequeñas */
+    border-right: 1px solid rgb(204, 203, 203);
+    border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Estilo para los campos de entrada de texto */
@@ -900,6 +939,9 @@ a {
     align-items: center;
     align-content: center;
     text-align: center;
+    border-right: 1px solid rgb(204, 203, 203);
+    border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
 }
 
 #main-register h1 {
@@ -960,6 +1002,8 @@ label {
     border-radius: 50px;
     font-size: 16px;
     cursor: pointer;
+    border: 5px solid #3483FA;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .botonReg-log:hover {
@@ -999,14 +1043,16 @@ label {
     max-width: 400px;
     margin: auto;
     padding: 20px;
-    background-color: rgb(240, 240, 240);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(240, 240, 240);    
     border-radius: 5px;
     margin-top: 15vh;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;  
+    border-right: 1px solid rgb(204, 203, 203);
+    border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);  
 }
 
 #main-crear-producto h1 {
@@ -1067,6 +1113,8 @@ div textarea {
     cursor: pointer;
     margin: 0 10px;
     width: 8rem;
+    border: 5px solid #3483FA;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 #pc-syr button:hover {
@@ -1087,6 +1135,9 @@ div textarea {
     border-radius: 5px;
     margin-top: 15vh;
     margin-bottom: 40px;
+    border-right: 1px solid rgb(204, 203, 203);
+    border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
 }
 
 #products-main #Agregar-Producto {
@@ -1114,6 +1165,9 @@ div textarea {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    border-right: 1px solid rgb(204, 203, 203);
+    border-bottom: 1px solid rgb(204, 203, 203);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
 }
 
 #products-main article h2 {
@@ -1131,6 +1185,7 @@ div textarea {
 }
 
 
+
 /* ==================================================== Media Queries ==================================================== */
 
 
@@ -1144,6 +1199,7 @@ div textarea {
     header {
         height: 10vh;
         align-items: flex-start;
+        box-shadow: 0px 5px 38px rgba(0, 0, 0, 0.15);
     }
 
     .logo-titulo {
@@ -1151,6 +1207,8 @@ div textarea {
         width: 55%;
         display: flex;
         justify-content: flex-end;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
     }
 
     .iconos-header {
@@ -1163,7 +1221,16 @@ div textarea {
     }
 
     .barra {
-        display: flex;
+        position: static;
+        background-color: #eae7de;
+        width: 100%;
+        height: 30%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+        border-bottom: 2px solid rgb(204, 203, 203);
+        display: flex;        
     }
 
     #menu {
@@ -1178,8 +1245,29 @@ div textarea {
         display: block;
     }
 
+    #cerrar-header {
+        display: none;
+    }
+
     .escritorio {
+        display: flex;
+        background-color: #3483FA;
+        width: 150px;
+        height: 35px;
+        border: 2px solid #3483FA;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1vw;
+        transition: all 1000ms;
+
         margin-bottom: 5%;
+    }
+
+    .escritorio:hover {
+        background-color: rgb(55, 206, 206);
+        border: 6px solid white;
     }
 
     /* main */
@@ -1219,6 +1307,10 @@ div textarea {
 
     /* ------------------------------ Secciones del Index------------------------------ */
 
+    body#index {
+        margin-top: 7rem;
+    }
+
     .seccion-imagenes-index {
         margin-top: 8vh;
     }
@@ -1231,18 +1323,27 @@ div textarea {
         margin-top: 2rem;      
     }
 
-    /*  .swiper {
-        padding: 0 70px;
+    
+    /* ---- ---- ---- nosotros - dudas - medios de pago ---- ---- ---- */
+
+    #main-nosotros, #main-dudas, #main-medios-de-pago {
+        margin-top: 20vh;
     }
 
-    .swiper-slide img {
-        width: 100%;
-    } */
-
+    #main-nosotros p, #main-dudas p, #main-medios-de-pago p {
+        width: 35%;
+        margin: auto;
+        margin-bottom: 2rem;
+    }
 
 
 
     /* ------------------------------ Secciones del ProducDetail ------------------------------ */
+
+    #producto-imagen-1 {        
+        margin-top: 7rem;
+        height: 70vh;
+    }
 
     /* seccion-producto */
 
@@ -1333,7 +1434,7 @@ div textarea {
     
     #products-main {
         width: 50%;
-        margin-top: 17vh;      
+        margin-top: 20vh;      
     }
 
 
