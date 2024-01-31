@@ -210,52 +210,6 @@ body#index {
 }
 
 
-/* Estilos del swiper o carrusel */
-.container {
-    max-width: 100%;
-    margin: auto;
-    display: flex;    
-}
-
-.swiper {
-    margin-top: 200px;
-    z-index: -1;
-}
-
-.swiper-slide {
-    margin: auto;
-    z-index: -1;
-    margin-top: 15vh;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    height: 420px;
-    width: 295px;
-    position: relative;
-}
-
-.swiper-slide img {
-    width: 295px;
-    border-radius: 15px;
-    height: 295px;
-    margin-top: 85px;
-
-}
-
-.swiper-txt {
-    position: absolute;
-    padding: 25px;
-    color: #000;
-}
-
-.swiper-txt h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: #222222;
-}
-
-
 /* Estilos Para Section Ofertas */
 
 .ofertas {
@@ -429,6 +383,19 @@ body#index {
 
 .seccion-imagenes h2 {
     margin-bottom: 20px;
+}
+
+#editar-detail {
+    text-align: end;
+    margin-right: 3rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#editar-detail a {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #04eca7;
 }
 
 /* seccion-producto */
@@ -1175,6 +1142,10 @@ div textarea {
 #products-main #Agregar-Producto {
     margin: 0 2%;
     text-align: end;
+}
+
+#products-main #Agregar-Producto a {
+    color: #04eca7;
 }
 
 #products-main h1 {
