@@ -13,7 +13,7 @@
     <main id="main-crear-producto">
         <h1>Editar producto</h1>
 
-        <form action="/products/edit?_method=PUT" method="POST" id="form-edit-product">
+        <form action="/products/edit/<%= producto.id %>?_method=PUT" method="POST" id="form-create-product">
             <div>
                 <label for="">Producto:</label>
                 <input type="text" name="nombreProducto" id="" placeholder="Ingresa el nombre del Producto" value='<%= producto.nombre %>' required>
@@ -49,6 +49,8 @@
                 <input type="text" name="image" id="" placeholder="Ingresa la url de la imagen..." value='<%= producto.imagenes %>' required>
             </div>
             
+            <input type="hidden" name="id" value="<%= producto.id %>">
+
             <div id="pc-syr">                
                 <button type="submit">Actualizar</button>
             </div>

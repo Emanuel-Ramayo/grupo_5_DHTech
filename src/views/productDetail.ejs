@@ -26,14 +26,18 @@
 
                 <h2 id="nombre-producto"><%= producto.nombre %> </h2>
 
-                <form method="POST" action="/products/delete/<%= producto.id %>?_method=DELETE">
+                <div class="detail-edicion">
+                    <!-- <div id="editar-detail">
+                        <a href="/products/edit/<%= producto.id %>">EDITAR PRODUCTO</a>
+                    </div> -->
 
-                    <button type="submit">Borrar Producto</button>
+                    <form method="GET" action="/products/edit/<%= producto.id %>" id="form-edit">
+                        <button type="submit" id="edit-detail">EDITAR PRODUCTO</button>
+                    </form>
 
-                </form>
-                
-                <div id="editar-detail">
-                    <a href="/products/edit/<%= producto.id %>">EDITAR PRODUCTO</a>
+                    <form method="POST" action="/products/delete/<%= producto.id %>?_method=DELETE" id="form-delete">
+                        <button type="submit" id="eliminar-detail">ELIMINAR PRODUCTO</button>
+                    </form>
                 </div>
                
             </section>

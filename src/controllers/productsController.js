@@ -43,7 +43,7 @@ const controller = {
             nombre: req.body.nombreProducto,
             precio: req.body.precio,
             categoria: req.body.tipoProducto,
-            stock: req.body.stock,
+            stock: JSON.parse(req.body.stock),
             descripcion: req.body.descripcion,
             imagenes: req.body.image,
         };
@@ -53,20 +53,14 @@ const controller = {
 
         // Convertir en JSON
         let newProductsJSON = JSON.stringify(productsFS);
-
-        console.log(productsFilePath);
         
-        try {
-            fs.writeFileSync(productsFilePath, newProductsJSON);
-            console.log('Archivo actualizado correctamente');
-            // Redireccionar solo después de una escritura exitosa
-            res.redirect('/products');
-        } catch (error) {
-            console.error('Error al escribir en el archivo:', error);
-            // Manejar el error de alguna manera
-            res.status(500).send('Error interno del servidor');
-        }
-    }, 
+        // Escribir en el JSON
+        fs.writeFileSync(productsFilePath, newProductsJSON);
+
+        // Redireccionar solo después de una escritura exitosa
+        res.redirect('/products');
+       
+    },
 
     editarProducts : (req, res) => {
 
@@ -82,18 +76,28 @@ const controller = {
         }
     },
 
-    saveEditProduct : (req, res) => {
+    saveEditProduct : (req, res) => {    
         
-        const producto = product.selectedProduct(req);
+        // Buscar indice del producto
+        const indice = productsFS.findIndex(product => product.id === parseInt(req.params.id));
+       
+        // Cargar información del formulario
+        productsFS[indice].nombre = req.body.nombreProducto;
+        productsFS[indice].precio = req.body.precio;
+        productsFS[indice].categoria = req.body.tipoProducto;
+        productsFS[indice].stock = JSON.parse(req.body.stock); // json.parse transforma en booleano el stock
+        productsFS[indice].descripcion = req.body.descripcion;
+        productsFS[indice].imagenes = req.body.image;
+    
+        // Convertir el array actualizado a JSON
+        const updatedProductsJSON = JSON.stringify(productsFS);
+    
+        // Escribir en el archivo JSON
+        fs.writeFileSync(productsFilePath, updatedProductsJSON);
+    
+        // Redireccionar a la página de productos
+        res.redirect('/products');
         
-        if (producto)
-        {
-            return res.render('productEdit.ejs', {producto});
-        }
-        else
-        {
-         return res.send('no existe el producto')
-        }
     },
 
     detalleProducts : (req, res) => {
@@ -112,17 +116,21 @@ const controller = {
 
     deleteProduct : (req, res) => {
         
-        const producto = product.selectedProduct(req);
+        const indice = productsFS.findIndex(product => product.id === parseInt(req.params.id));
         
-        if (producto)
-        {
-            return res.render('productEdit.ejs', {producto});
-        }
-        else
-        {
-         return res.send('no existe el producto')
-        }
+        if (indice !== -1) {
+            productsFS.splice(indice, 1);
+
+            let newProductsJSON = JSON.stringify(productsFS);
+
+            fs.writeFileSync(productsFilePath, newProductsJSON);
+
+            res.redirect('/products');
+        } else {
+            res.redirect('/products');
+        }   
     },
+
   
 };
 

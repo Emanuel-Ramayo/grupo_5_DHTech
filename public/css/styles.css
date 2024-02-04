@@ -397,18 +397,36 @@ body#index {
     margin-bottom: 20px;
 }
 
-#editar-detail {
-    text-align: end;
-    margin-right: 3rem;
+.detail-edicion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-right: 3rem;
     margin-bottom: 0.5rem;
-    font-size: 1.2rem;
 }
 
-#editar-detail a {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-    color: #04eca7;
+#edit-detail {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(134, 250, 179);
+    color: white;
+    padding: 0.3rem;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 1rem;
+    margin-right: 1rem;
 }
+
+#eliminar-detail {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(247, 119, 119);
+    color: white;
+    padding: 0.3rem;
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 1rem;
+}
+
 
 /* seccion-producto */
 

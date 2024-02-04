@@ -18,7 +18,7 @@ router.post('/create', productsController.saveNewProduct);
 
 // Edición de productos
 router.get('/edit/:id', productsController.editarProducts);
-router.put('/edit', productsController.saveEditProduct);
+router.put('/edit/:id', productsController.saveEditProduct);
 
 
 // Detalle de producto
