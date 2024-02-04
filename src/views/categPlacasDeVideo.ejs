@@ -14,7 +14,7 @@
         <h1>Lista de productos:</h1>
 
         <div id="Agregar-Producto">
-            <a href="/products/create">Agregar un Producto</a>
+            <a href="/products/create">CREAR NUEVO PRODUCTO</a>
         </div>
 
         <section>
@@ -34,9 +34,8 @@
 
                         <a href="/products/<%= products[i].id %>">
                             <img src="<%= products[i].imagenes %>" alt="">
-                            <h2>
-                                <%= products[i].nombre %>
-                            </h2>
+                            <h2><%= products[i].nombre %></h2>
+                            <h3> $ <%= products[i].precio %></h3>
                         </a>
                     </article>
                     <% } %>

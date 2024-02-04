@@ -13,15 +13,19 @@ router.get('/procesadores', productsController.mostrarProcesadores);
 router.get('/almacenamiento', productsController.mostrarAlmacenamiento);
 
 // Creación de productos
-router.get('/create', productsController.crearProducts);
+router.get('/create', productsController.createProduct);
+router.post('/create', productsController.saveNewProduct);
 
 // Edición de productos
-router.get('/edit', productsController.editarProducts);
+router.get('/edit/:id', productsController.editarProducts);
+router.put('/edit', productsController.saveEditProduct);
 
 
 // Detalle de producto
 router.get('/:id', productsController.detalleProducts);
 
+// Eliminar producto
+router.delete('/delete/:id', productsController.deleteProduct);
 
 
 module.exports = router;

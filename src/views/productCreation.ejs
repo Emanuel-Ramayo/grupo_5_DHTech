@@ -13,7 +13,7 @@
     <main id="main-crear-producto">
         <h1>Creación de productos</h1>
 
-        <form action="" method="POST" id="form-create-product" enctype="multipart/form-data">
+        <form action="/products/create" method="POST" id="form-create-product" enctype="">
             <div>
                 <label for="">Producto:</label>
                 <input type="text" name="nombreProducto" id="" placeholder="Ingresa el nombre del Producto" required>
@@ -27,26 +27,28 @@
                 <label for="">Categoría:</label>
                 <select name="tipoProducto" id="" required>
                     <option value="" selected disabled>Selecciona una categoría</option>
-                    <option value="scr">Monitores</option>
-                    <option value="gpu">Placas de Video</option>
-                    <option value="cpu">Procesadores</option>
-                    <option value="str">Almacenamiento</option>
-                    <option value="psu">Fuentes</option>
-                    <option value="case">Gabinetes</option>
-                    <option value="pcs">Periféricos</option>
+                    <option value="Monitores">Monitores</option>
+                    <option value="Placas de Video">Placas de Video</option>
+                    <option value="Procesadores">Procesadores</option>
+                    <option value="Almacenamiento">Almacenamiento</option>
                 </select>
             </div>
             <div class="pc-radio">
-                <label for="si-stock"><input type="radio" name="stock" id="si-stock" required>En Stock</label>
-                <label for="no-stock"><input type="radio" name="stock" id="no-stock">Sin Stock</label>
+                <label for="si-stock"><input type="radio" name="stock" id="si-stock" value="true" required>En Stock</label>
+                <label for="no-stock"><input type="radio" name="stock" id="no-stock" value="false">Sin Stock</label>
             </div>
             <div>
                 <label for="">Descripción del producto:</label>
                 <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Escribe aquí..." required></textarea>
             </div>
-            <div id="pc-subir">
+            <!-- <div id="pc-subir">
                 <label for="">Subir imágenes:</label>
                 <input type="file" name="subir-imagenes" id="" accept=".jpg, .png" multiple required>
+            </div> -->
+
+            <div>
+                <label for="">Imagen:</label>
+                <input type="text" name="image" id="" placeholder="Ingresa la url de la imagen..." required>
             </div>
             
             <div id="pc-syr">                

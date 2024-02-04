@@ -25,9 +25,15 @@
                 </div>
 
                 <h2 id="nombre-producto"><%= producto.nombre %> </h2>
+
+                <form method="POST" action="/products/delete/<%= producto.id %>?_method=DELETE">
+
+                    <button type="submit">Borrar Producto</button>
+
+                </form>
                 
                 <div id="editar-detail">
-                    <a href="/products/edit">EDITAR PRODUCTO</a>
+                    <a href="/products/edit/<%= producto.id %>">EDITAR PRODUCTO</a>
                 </div>
                
             </section>
@@ -68,9 +74,9 @@
 
                     <div class="precios">
                         <h4>Precio Especial!</h4>
-                        <h3 id="descuento"><%= (producto.precio * 0.75).toFixed(2) %></h3>                    
+                        <h3 id="descuento"> $ <%= (producto.precio * 0.75).toFixed(2) %></h3>                    
                         
-                        <h3 id="precio-original"><%= producto.precio %></h3>
+                        <h3 id="precio-original"> $ <%= producto.precio %></h3>
                     </div>
 
                    
